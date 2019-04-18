@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="chat" unicode="&#59369;" d="M224 203.20000000000005v-68.8c0-16 12.8-28.8 28.8-28.8h411.2c16 0 28.8 12.8 28.8 28.8V323.20000000000005h76.8c16 0 28.8 12.8 28.8 28.8v68.8l94.4 94.4c1.6 1.6 1.6 4.8 0 6.4L800 616v19.2c0 16-12.8 28.8-28.8 28.8H342.4c-16 0-28.8-12.8-28.8-28.8v-188.8h-59.2c-16 0-28.8-12.8-28.8-28.8v-19.2L131.2 304c-1.6-1.6-1.6-4.8 0-6.4l92.8-94.4z m32 193.6v16h80v-33.6c0-20.8 16-36.8 36.8-36.8h288V137.60000000000002H256V216l-9.6 9.6-73.6 73.6 73.6 73.6 9.6 11.2v12.8z m88 235.2H768v-28.8l9.6-9.6 73.6-73.6-73.6-73.6-9.6-11.2V356.79999999999995h-80v1.6H374.4c-11.2 0-20.8 9.6-20.8 20.8v48h-8V632z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

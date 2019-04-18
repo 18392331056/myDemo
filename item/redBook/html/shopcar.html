@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>shopcar</title>
+<link rel="stylesheet" href="../css/shopcar.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+<!-- header -->
+    <header>
+       <img src="../img/13.png" alt=""> 
+       <span>购物车</span>
+       <a href="">管理</a>
+    </header>
+<!-- center -->
+<div class="center">
+    <div class="c_shop">
+        <ul class="s_ul">
+            <li>
+                <input type="checkbox" class="mycheck">
+            </li>
+            <li>
+                <img src="../img/35.png" alt="">
+            </li>
+            <li>小红书福利社</li>
+            <li>自营</li>
+            <li>领劵</li>
+        </ul>
+        <div class="c_list">
+            <p>
+                <input type="checkbox" class="mycheck1">
+            </p>
+            <img src="../img/36.png" alt="">
+            <ul class="l_ul">
+                <li>Grow Gorgeous 防脱固发精油</li>
+                <li>60ml 加强版</li>
+                <li>
+                    <span>￥335</span>
+                    <form action="">
+                        <button>－</button>
+                        <input type="text" value="1">
+                        <button>＋</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="c_list">
+            <p>
+                <input type="checkbox" class="mycheck1">
+            </p>
+            <img src="../img/36.png" alt="">
+            <ul class="l_ul">
+                <li>Grow Gorgeous 防脱固发精油</li>
+                <li>60ml 加强版</li>
+                <li>
+                    <span>￥335</span>
+                    <form action="">
+                        <button>－</button>
+                        <input type="text" value="1">
+                        <button>＋</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="c_shop">
+        <ul class="s_ul">
+            <li>
+                <input type="checkbox" class="mycheck">
+            </li>
+            <li>
+                <img src="../img/35.png" alt="">
+            </li>
+            <li>MO&Co.官方旗舰店</li>
+            <li>自营</li>
+            <li>领劵</li>
+        </ul>
+        <div class="c_list">
+            <p>
+                <input type="checkbox" class="mycheck1">
+            </p>
+            <img src="../img/36.png" alt="">
+            <ul class="l_ul">
+                <li>Grow Gorgeous 防脱固发精油</li>
+                <li>60ml 加强版</li>
+                <li>
+                    <span>￥335</span>
+                    <form action="">
+                        <button>－</button>
+                        <input type="text" value="1">
+                        <button>＋</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="c_list">
+            <p>
+                <input type="checkbox" class="mycheck1">
+            </p>
+            <img src="../img/36.png" alt="">
+            <ul class="l_ul">
+                <li>Grow Gorgeous 防脱固发精油</li>
+                <li>60ml 加强版</li>
+                <li>
+                    <span>￥335</span>
+                    <form action="">
+                        <button>－</button>
+                        <input type="text" value="1">
+                        <button>＋</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- bottom -->
+<div class="bottom">
+    <ul>
+        <li>
+            <input type="checkbox" class="mycheck2">
+        </li>
+        <li>全选</li>
+        <li>
+            <span>总计 : </span>
+            <span>￥1212</span>
+        </li>
+        <li>
+            结算
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+<script src="../js/swiper.min.js"></script>
+<script>
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 水平切换选项
+            loop: true, // 循环模式选项
+            speed: 300, //图片划过速度
+            //自动播放
+            autoplay: {
+                delay: 3000, //延迟播放下一张图片
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        })
+    }
+</script>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+<script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+<div class="head" id="head">
+	<ul>
+		<li>
+			<a href="">BURBERRY</a>
+		</li>
+		<li>
+			<img src="../img/1.png">
+		</li>
+		<li>
+			<img src="../img/2.png">
+			<span>0</span>
+		</li>
+		<li>
+			<img src="../img/3.png" id="li_img">
+			<div class="click" id="click">
+				<p>
+					<span>主页</span>
+					<span id="span_img">×</span>
+				</p>
+				<p></p>
+				<p class="pi">
+					<span>时装秀</span>
+					<span>></span>
+				</p>
+				<p class="pi">
+					<span>女士</span>
+					<span>></span>
+				</p>
+				<p class="pi"> 
+					<span>男士</span>
+					<span>></span>
+				</p>
+				<p class="pi">
+					<span>儿童</span>
+					<span>></span>
+				</p>
+				<p class="pi">
+					<span>Trench 风衣</span>
+					<span>></span>
+				</p>
+				<p class="pi">
+					<span>封面故事</span>
+					<span>></span>
+				</p>
+				<p></p>
+			</div>
+			<div class="zyc" id="zyc"></div>
+		</li>
+	</ul>
+</div>
+<div class="big">
+	<header>
+		<div class="center">
+			<ul>
+				<li>
+					<h3>2019</h3>
+					<p>春夏系列</p>
+				</li>
+				<li>
+					<h3>KINGDOM</h3>
+					<p>王者之都</p>
+				</li>
+				<li>
+					<p>敬请期待</p>
+					<h3>BURBERRY</h3>
+					<p>首席创意总监</p>
+				</li>
+				<li>
+					<h3>RICCARDO TISCI</h3>
+					<p>的首秀系列</p>
+				</li>
+				<li>
+					<p>于</p>
+					<h3>2019年2月27日</h3>
+					<p>隆重亮相</p>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>
+	<div class="sec_big">
+		<div>精选推荐</div>
+		<ul>
+			<li>
+				<a href="">时装秀</a>
+			</li>
+			<li>
+				<a href="woman.html">女士</a>
+			</li>
+			<li>
+				<a href="man.html">男士</a>
+			</li>
+			<li>
+				<a href="cx.html">春夏</a>
+			</li>
+			<li>
+				<a href="">Trench风衣</a>
+			</li>
+			<li>
+				<a href="index.html">封面故事</a>
+			</li>
+		</ul>
+	</div>
+	</section>
+<!-- 轮播图开始 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<!-- <div class="swiper-slide"><img src="img/m1.jpg" alt=""></div> -->
+			<div class="swiper-slide"><img src="../img/15.png" alt=""></div>
+			<div class="swiper-slide"><img src="../img/16.png" alt=""></div>
+			<div class="swiper-slide"><img src="../img/17.png" alt=""></div>
+			<div class="swiper-slide"><img src="../img/18.png" alt=""></div>
+			<div class="swiper-slide"><img src="../img/19.png" alt=""></div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+
+		<!-- 如果需要导航按钮 -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- 如果需要滚动条 -->
+		<!-- <div class="swiper-scrollbar"></div> -->
+	</div>
+<!-- 轮播图结束 -->
+	<!-- thing -->
+	<div class="thing">
+		<div>店铺方位</div>
+		<h3>联系我们</h3>
+		<p>4001 201 154</p>
+		<p>普通话服务(9:00--19:00) 北京时间</p>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="footer_one">
+			<p>配送至</p>
+			<h3>中国</h3>
+		</div>
+		<div class="footer_one">
+			<p>中文 |</p>
+			<h3>English</h3>
+		</div>
+		<div class="footer_two">
+			<ul>
+				<li>
+					<a href=""><img src="../img/4.png" alt=""></a>
+					<span>沪ICP备11028120号-1</span>
+				</li>
+				<li>
+					<a href=""><img src="../img/5.png" alt=""></a>
+					<span>沪公网安备31010602002055号</span>
+				</li>
+				<li>
+					<a href=""><img src="../img/6.png" alt=""></a>
+					<span>电子营业执照</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript">
+	window.onload = function () {
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal', // 水平切换选项
+				loop: true, // 循环模式选项
+				speed: 300, //图片划过速度
+				//自动播放
+				autoplay: {
+					delay: 3000, //延迟播放下一张图片
+					stopOnLastSlide: false,
+					disableOnInteraction: false,
+				},
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+	
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+	
+				// 如果需要滚动条
+				// scrollbar: {
+				//     el: '.swiper-scrollbar',
+				// },
+			})
+		}
+	
+	function $(str){
+		if(str.charAt(0)=="#"){
+			return document.getElementById(str.substring(1));
+		}else if(str.charAt(0)=="."){
+			return document.getElementsByClassName(str.substring(1));
+		}else{
+			return document.getElementsByTagName(str);
+		}
+	}
+
+	$("#li_img").onclick = function(){
+		$("#click").style.display = "block";
+		$("#zyc").style.display = "block";
+		$("#click").style.zIndex = "5";
+	}
+	$("#span_img").onclick = function(){
+		$("#click").style.display = "none";
+		$("#zyc").style.display = "none";
+	}
+</script>
+</body>
+</html>
+

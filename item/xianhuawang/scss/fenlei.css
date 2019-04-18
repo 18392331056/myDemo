@@ -1,0 +1,217 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 26.67vw;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  font-family: SourceHanSansCN, -apple-system, Verdana, Arial, Helvetica, sans-serif;
+  color: #232628;
+}
+
+a {
+  text-decoration: none;
+  color: #232628;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: .44rem;
+  display: flex;
+  background-color: #fff;
+}
+
+header .header-left {
+  width: .44rem;
+  height: .44rem;
+}
+
+header .header-left a {
+  display: block;
+  font-size: 0;
+  height: 100%;
+  text-align: center;
+  line-height: .44rem;
+}
+
+header .header-left a .icon-zuojiantou {
+  font-size: 16px;
+  color: #000;
+}
+
+header .header-right {
+  display: flex;
+  margin: .04rem;
+  flex: 1;
+  background-color: #E9ECF0;
+  border-radius: 0.05rem;
+}
+
+header .header-right .header-right-left {
+  width: .36rem;
+  height: .36rem;
+  text-align: center;
+  line-height: .36rem;
+  font-size: 0;
+}
+
+header .header-right .header-right-left .icon-sousuo-copy {
+  font-size: 16px;
+  color: #000;
+}
+
+header .header-right .headerbar-right-right {
+  flex: 1;
+  padding-right: .16rem;
+  font-size: 0;
+}
+
+header .header-right .headerbar-right-right input {
+  border: 0;
+  width: 100%;
+  height: .36rem;
+  background-color: transparent;
+}
+
+.fenlei {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  margin-top: .02rem;
+}
+
+.fenlei-left {
+  width: 25%;
+  margin-right: .02rem;
+  background-color: #fff;
+}
+
+.fenlei-left .fenlei-left-remen {
+  width: 100%;
+  height: .56rem;
+  line-height: .56rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.fenlei-left .fenlei-left-remen a {
+  display: block;
+}
+
+.fenlei-left-remen.juhuang a {
+  color: #FF734C;
+}
+
+.fenlei-right {
+  flex: 1;
+  background-color: #fff;
+}
+
+.fenlei-right .fenlei-right-remen {
+  height: .88rem;
+  margin-bottom: .08rem;
+  background: url(../img/1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.fenlei-right .fenlei-right-remen a {
+  display: block;
+  font-size: 0;
+  height: .88rem;
+  padding: 0 .16rem;
+}
+
+.fenlei-right .fenlei-right-remen a img {
+  width: 100%;
+}
+
+.fenlei-right-yi {
+  padding: .08rem .08rem .16rem;
+  overflow: hidden;
+  display: none;
+}
+
+.er {
+  display: block;
+}
+
+.fenlei-right-remenjiesao {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fenlei-right-remenjiesao .fenlei-right-remenjiesao-xianh {
+  width: 33%;
+  padding: 0.08rem 0;
+  float: left;
+}
+
+.fenlei-right-remenjiesao .fenlei-right-remenjiesao-xianh a {
+  font-size: 0;
+  display: block;
+  text-align: center;
+}
+
+.fenlei-right-remenjiesao .fenlei-right-remenjiesao-xianh a img {
+  display: 0;
+  border-radius: 50%;
+  width: .56rem;
+  height: .56rem;
+}
+
+.fenlei-right-remenjiesao .fenlei-right-remenjiesao-xianh a .fenlei-right-p {
+  margin: .08rem .08rem 0;
+  font-size: 12px;
+}
+
+.wei {
+  width: 100%;
+  height: .47rem;
+  background-color: #f8f9fb;
+  display: flex;
+}
+
+.wei li {
+  flex: 1;
+  height: .47rem;
+  font-size: 12px;
+}
+
+.wei li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: .02rem;
+}
+
+.wei li a .tu {
+  color: #000;
+}
+
+.wei li a p {
+  color: #000;
+}
+
+.bred a .tu {
+  color: red !important;
+}
+
+.bred a p {
+  color: red !important;
+}

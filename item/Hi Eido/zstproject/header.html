@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="left">
+				<span class="iconfont icon-huoche"></span>
+				<a >全场免费送</a>
+			</div>
+			<div class="right">
+				
+				<a  class=="deng_zhu" href="logo.html">登录/注册</a>
+				<span class="iconfont icon-cart"></span>
+				<a >0件商品</a>
+			</div>
+		</div>
+	</div>
+	<div class="dao_hang">
+		<div class="ye_mei">
+			<div class="top"><img src="img/logo.png"></div>
+			<div class="bottom">
+				<div class="shou_ye">
+					<a href="#">首页</a>
+					<a class="hufu" href="#">护肤</a>
+					<a class="hufu" href="#">彩妆</a>
+
+					<a href="#">男士</a>
+					<a href="#">防晒</a>
+					<a href="#">注册有礼</a>
+					<a href="#">明星产品</a>
+					<a href="#">官网购物理由</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+					<a href="#">品牌故事</a>&nbsp;&nbsp;
+					<a href="#">专柜导航</a>
+
+				</div>
+				<div class="right_search">
+					<form class="sou_suo">
+						<input type="text" name="" placeholder="搜索商品">
+						<button class="btn_search"></button>
+
+					</form>
+			
+
+				</div>
+				
+			</div>
+		</div>
+		<div class="cai_zhuang">
+						<div class="zhuang">
+							<div class="cai_left">
+								<p>按系列</p>
+								<div class="cai_img">
+									<img src="img/cai1.jpg">
+									<img src="img/cai2.jpg">
+									<img src="img/cai2.jpg">
+									<img src="img/cai1.jpg">
+								</div>
+							</div>
+							<div class="cai_right">
+								<ul>
+									<li>面部</li>
+									<li>妆前乳</li>
+									<li>粉底</li>
+									<li>遮瑕</li>
+									<li>蜜粉</li>
+									<li>腮红</li>
+								</ul>
+								<ul>
+									<li>眼部</li>
+									<li>妆前乳</li>
+									<li>粉底</li>
+									<li>遮瑕</li>
+									<li>遮瑕</li>
+									
+									
+								</ul>
+								<ul>
+									<li>唇部</li>
+									<li>妆前乳</li>
+									<li>粉底</li>
+									
+								</ul>
+								<ul>
+									<li>彩妆</li>
+									<li>妆前乳</li>
+									<li>粉底</li>
+									<li>遮瑕</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+	</div>
+	<div class="fixs">
+		<ul>
+			<li ><span>电话咨询</span></li>
+			<li ><span>关注我们</span></li>
+			<li><img src="img/jian1.jpg"><p>在线客服</p></li>
+			<li><a href="javascript:;"><img src="img/jian.jpg"></a></li>
+
+		</ul>
+	</div>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".hufu").hover(function(){
+			$(".hufu").css({"box-shadow":"-1px 0px 5px 1px #d9d9d9","box-shadow":"1px 0px 5px 1px #d9d9d9"})
+			$(".cai_zhuang").css({"display":"block","z-index":"100","position":"relative"})
+		},function(){
+			$(".hufu").css({"box-shadow":"-1px 0px 0px 0px transparent"})
+			$(".hufu").css({"box-shadow":"1px 0px 0px 0px transparent"})
+
+			$(".cai_zhuang").css({"display":"none","z-index":"-1","position":"absolute"})
+		})
+
+	})
+	window.onscroll = function(){
+	var scrollTop = $(".fixs");
+	var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
+	if(_scroll >= 200){
+		scrollTop.css({"position":"fixed","top":"300px","z-index":"999"});
+		// $(".hardware").css({"top":"100px","position":"relative"});
+	} else {
+		scrollTop.css({"position":"absolute","top":"2529px","z-index":"0"});
+	}
+
+}
+
+
+    //显示微信二维码
+   
+
+
+</script>

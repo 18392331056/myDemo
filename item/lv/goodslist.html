@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+	<link rel="stylesheet" type="text/css" href="css/goodlist.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<body>
+<!-- header	 -->
+	<header>
+		<div class="h_left">
+			<a href="#"><p>LOUIS VUITTON</p></a>
+		</div>
+		<div class="h_zhong">
+			<a href="#">LV NOW</a>
+			<a href="#">路易威登世界</a>
+			<a href="#">女士</a>
+			<a href="#">男士</a>
+			<a href="#">专卖店</a>
+		</div>
+		<div class="h_right">
+			<a href="#"><i class="iconfont icon-fangdajing"></i></a>
+			<i class="iconfont icon-icon-"></i>
+			<a id="gz" href="#">
+				<img src="image/LV.PNG"/>
+					<div class="mylv" id="Mylv">
+						<div class="sjx">
+							<div class="triangles"></div>
+						</div>
+						<div class="mylv_box">
+							<div class="mylv_l">
+								<p>会员登录</p>
+								<p>我已有一个账户</p>
+								<p>用户名(手机号/电子邮箱地址)*</p>
+								<input type="text" id="btn01" placeholder="手机号/邮箱"/>
+								<p>密码*</p>
+								<input type="password" id="btn02"/>
+								<p>忘记密码？</p>
+								<input type="button" id="btn1" value="登录"/>
+							</div>
+							<div class="mylv_r">
+								<p>创建新的账户<button id="error">×</button></p>
+								<p>创建mylv账户后，你可以通过任何设备：<br/>·查询您的网上订单以及历史购买记录<br/>·管理您的个人信息<br/>·获取最新的路易威登电子报<br/>·储存您的购物袋以及愿望清单
+								</p>
+								<input type="button" id="btn2" value="创建mylv账户">
+							</div>
+						</div>
+					</div>
+			</a>
+			<a href="#"><i class="iconfont icon-icon4"></i></a>
+			<a href="#"><i class="iconfont icon-wenhao"></i></a>
+			<p>400 6588 555</p>
+		</div>
+	</header>	
+<!-- goods -->
+<div class="goods">
+	<div class="goods_up">
+		<div class="danxi">
+			<p>单西</p>
+			<p>15件产品</p>	
+			<a id="saixuan" href="#">
+				<span id="zheng">显示筛选器 ▼</span>
+				<span id="fan">隐藏筛选器 ▲</span>
+			</a>
+		</div>
+		<a  id="saixuan2" href="#">
+			<p id="xilie">按系列查看
+				<div class="Guo">
+					<div class="guo">
+						<div class="guo_l">
+							<p>2018早秋系列</p>
+							<p>2018春夏系列</p>
+						</div>
+						<div class="guo_r">
+							<img src="image/color1.jpg">
+							<img src="image/color2.jpg">
+							<img src="image/color3.jpg">
+							<img src="image/color4.jpg">
+							<img src="image/color5.jpg">
+						</div>
+					</div>	
+					<p id="yincang">隐藏筛选器 ▲</p>
+				</div>
+			</p>
+			<div class="xian"></div>
+			<p id="yanse">按颜色查看
+					
+			</p>
+		</a>
+	</div>
+	<div class="goods_down">
+	</div>
+</div>
+<!-- footer	 -->
+	<footer>
+		<div class="s_up">
+			<a href="#">路易威登</a>
+			<p id="wode">> 我的路易威登</p>
+			<p id="dingduan">︿</p>
+		</div>
+		<div class="x_down">
+			<a href="#">中国大陆</a>
+			<a href="#">订阅电子版</a>
+			<a href="#">联系我们</a>
+			<a href="#">应用程序</a>
+			<a href="#">关注我们</a>
+			<a href="#">法律声明和隐私条款</a>
+			<a href="#">沪ICP备09069024号</a>
+			<a href="#">电子营业执照</a>
+			<a href="#">出版物经营许可证</a>
+			<a href="#">沪公网安备</a>
+			<p>招聘</p>
+			<p>网站地图</p>
+		</div>
+	</footer>		
+</body>
+</html>
+<script type="text/javascript" src="js/jquery1.42.min.js"/></script>
+
+<script type="text/javascript">
+
+
+	window.onload = function(){
+		//获取文档对象
+ 		$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $("html") : $("body")) : $("html,body");
+ 		//返回顶部
+        $("#dingduan").click(function(){
+        	$body.animate({scrollTop: 0},3000);
+        });
+
+        //点击、关闭筛选器
+        $("#zheng").click(function(){
+        	$("#fan").css({"display":"block"});
+        	$("#zheng").css({"display":"none"});
+        	$(".Guo").slideDown("slow");
+        });
+        $("#fan").click(function(){
+        	$("#zheng").css({"display":"block"});
+        	$("#fan").css({"display":"none"});
+        	$(".Guo").slideUp("slow");
+        });
+        $("#saixuan2").click(function(){
+        	$(".Guo").slideDown("slow");
+        	$("#fan").css({"display":"block"});
+        	$("#zheng").css({"display":"none"});
+        });
+        $("#yincang").click(function(){
+        	$(".Guo").slideUp("slow");
+        	$("#fan").css({"display":"none"});
+        	$("#zheng").css({"display":"block"});
+        });
+
+        //ajax发请求
+        $.ajax({
+        	type:"get",
+        	url:"php/getGoodsInfo.php",
+        	success:function(data){
+        		createUI(data);
+        		  
+        	}
+        });
+    } 
+
+    function createUI(data){
+    	var goodsJson = jQuery.parseJSON(data);
+
+    		
+    		for(var j = 0;j<3;j++){
+    			 
+    			for(let i = 0;i<goodsJson.length;i++){
+    				//
+    				// var goodsImg = "";
+    				let str = `
+		    				<div class="goods_down_box">
+		    					<a href="goods.html?goodsId=${goodsJson[i].goodsId}" style="width:400px;height:500px;float:left">
+									<img style="width:400px;height:400px" src="${goodsJson[j].goodsImg}">
+									<p style=" font-size:16px;color:black;margin-top:10px;text-align:center">${goodsJson[j].goodsName}</p>
+									<p style=" font-size:16px;color:black;margin-top:10px;text-align:center">￥ ${goodsJson[j].goodsPrice}</p>
+		    					</a>
+		    				</div>
+    					`;
+    					//console.log(str);
+    					$(".goods_down").append(str);
+    			}
+    		}
+
+
+}
+
+
+
+</script>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/xiang.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div id="header">
+
+	</div>
+	<div class="center">
+		<div class="lie">
+			<div class="lie_left">
+				<div class="zhong">
+						<h3><a href="javascripr:;">按种类</a></h3>
+						<span class="jianjiao"></span>
+						<ul class="skin" style="display:none">
+							<li>卸妆清洁</li>
+							<li>爽肤水</li>
+							<li>精华</li>
+							<li>乳液</li>
+							<li>面霜</li>
+							<li>唇部护理</li>
+							<li>面膜</li>
+							<li>护肤套装</li>
+
+						</ul>
+				</div>
+				<div class="zhong">
+						<h3><a href="javascripr:;">按系列</a></h3>
+						<span class="jianjiao"></span>
+						<ul class="skin" style="display:none">
+							<li>卸妆清洁</li>
+							<li>爽肤水</li>
+							<li>精华</li>
+							<li>乳液</li>
+							<li>面霜</li>
+							<li>唇部护理</li>
+							<li>面膜</li>
+							<li>护肤套装</li>
+
+						</ul>
+				</div>
+				<div class="zhong">
+						<h3><a href="javascripr:;">按关心问题</a></h3>
+						<span class="jianjiao"></span>
+						<ul class="skin" style="display:none">
+							<li>卸妆清洁</li>
+							<li>爽肤水</li>
+							<li>精华</li>
+							<li>乳液</li>
+							<li>面霜</li>
+							<li>唇部护理</li>
+							<li>面膜</li>
+							<li>护肤套装</li>
+
+						</ul>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="goods_img">
+					<img src="img/ji1.png">
+					
+				</div>
+				<div class="file">
+					<div class="info">
+						<h3>肌活净颜洁面膏</h3>
+						<h4>125ml</h4>
+
+						<div class="info_message">
+							<span style="font-weight:bold;">详情 :&nbsp;净化”黑科技”，深入净化肌肤屏障，添加微晶粒子，深入去除老废角质，肌肤清透舒润。</span>
+							
+							<br/>
+							<br/>
+							<span style="font-weight:bold;">功效 :&nbsp;资生堂特别净化黑科技，打造丰富清洁泡沫，深入去除肌肤浊质，充分净化肌肤屏障。&nbsp; </span>
+							
+							<span style="white-space:pre"></span>
+							<br/>
+							<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 添加日本稻胚芽油、蚕丝粉等天然成分，滋润肌肤，并有效提亮肤色。 
+							<br/>
+							<br/>
+							<span style="white-space:pre"></span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 添加芍药根提取物，在卓效保湿的同时活肤抗老化。
+							<br/>
+							<br/>
+							<span style="font-weight:bold;">使用方法：取适量洁面膏，加少量水揉搓起丰富泡沫，然后在面部轻轻打圈按摩，再用清水充分洗净。</span>
+							      
+						</div>
+					</div>
+					<div class="count">
+							<div class="count_top">
+								<label>
+									<span class="hanzi">数量：</span>
+									<p><button ><span>-</span></button><input type="text" name="" value="1" id="num"><button><span>＋</span></button></p>
+								</label>
+								<p class="money"><span style="color:#670205;font-size: 16px;display:inline-block;line-height:26px;margin-top:8px;">价格</span><span style="color:#670205;font-size: 25px;">￥350</span></p>
+								
+							</div>
+							<div class="count_bottom">
+
+								<p class="shop_car"><a href="javascript:;"></a>详情</p>
+								<p class="xiang_qing"><a href="javascript:;">加入购物车</a></p>
+								<a href="javascript:;" class="btn add-wish no-wish btn-addfav" onclick="ga('send', 'event', 'add to wishlist', 'product page', '肌活净颜洁面膏');">加入收藏</a>
+							</div>
+					</div>
+				</div>
+				<div class="baozheng">
+					<ul>
+						<li>
+							<img src="img/toTop.png">
+							<span>官方品质保证</span>
+						</li>
+						<li>
+							<img src="img/toTop.png">
+							<span>全场免运费</span>
+						</li>
+						<li>
+							<img src="img/toTop.png">
+							<span>支付保障</span>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+				
+		</div>
+		
+
+			
+	</div>
+ 
+	
+	<div id="footer">
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<!-- <script type="text/javascript" src="js/xiang.js"></script> -->
+<script type="text/javascript">
+
+function GetRequest(){
+			var str = location.search;
+			//获取url中？后的字符串
+			var arr = str.split("=");//将字符串以等号分割
+			for(var i in arr){
+					console.log(arr[1]);
+					return arr[1];
+			}
+}
+
+	var id = GetRequest();
+	$(function(){
+		$.ajax({
+			type:"GET",
+			url:"php/getGoodsinfo.php",
+			data:{
+				"goodsId":id
+			},
+			async:true,
+			dataType:"JSON",
+			success:function(data){
+				console.log(data);
+				console.log(typeof data)
+				// showfunc(data);
+				}	
+
+			})
+
+	})
+		
+function showfunc(data){
+	let strHTML="";
+	for(var i in data){
+		strHTML=`<div class="goods">
+				<div class="goods_img">
+					<img src=${data[i].goodsImg}>
+					
+				</div>
+				<div class="file">
+					<div class="info">
+						<h3>${data[i].goodsName}</h3>
+						<h4>${data[i].beiyong1}</h4>
+
+						<div class="info_message">
+							<span style="font-weight:bold;">${data[i].goodsDesc}。</span>
+							
+							<br/>
+							<br/>
+							<span style="font-weight:bold;">${data[i].beiyong2}</span>
+							
+							<span style="white-space:pre"></span>
+							<br/>
+							<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 添加日本稻胚芽油、蚕丝粉等天然成分，滋润肌肤，并有效提亮肤色。 
+							<br/>
+							<br/>
+							<span style="white-space:pre"></span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 添加芍药根提取物，在卓效保湿的同时活肤抗老化。
+							<br/>
+							<br/>
+							<span style="font-weight:bold;">${data[i].beiyong3}</span>
+							      
+						</div>
+					</div>
+					<div class="count">
+							<div class="count_top">
+								<label>
+									<span class="hanzi">数量：</span>
+									<p><button ><span>-</span></button><input type="text" name="" value="${data[i].goodsCount}" id="num"><button><span>＋</span></button></p>
+								</label>
+								<p class="money"><span style="color:#670205;font-size: 16px;display:inline-block;line-height:26px;margin-top:8px;">价格</span><span style="color:#670205;font-size: 25px;">￥${data[i].goodsPrice}</span></p>
+								
+							</div>
+							<div class="count_bottom">
+
+								<p class="shop_car"><a href="javascript:;"></a>详情</p>
+								<p class="xiang_qing"><a href="javascript:;">加入购物车</a></p>
+								<a href="javascript:;" class="btn add-wish no-wish btn-addfav" onclick="ga('send', 'event', 'add to wishlist', 'product page', '肌活净颜洁面膏');">加入收藏</a>
+							</div>
+					</div>
+				</div>
+				<div class="baozheng">
+					<ul>
+						<li>
+							<img src="img/toTop.png">
+							<span>官方品质保证</span>
+						</li>
+						<li>
+							<img src="img/toTop.png">
+							<span>全场免运费</span>
+						</li>
+						<li>
+							<img src="img/toTop.png">
+							<span>支付保障</span>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>`
+	}
+}
+	
+
+ 
+ 
+
+</script>

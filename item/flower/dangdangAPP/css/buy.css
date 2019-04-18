@@ -1,0 +1,223 @@
+.header-box {
+  width: 100%;
+  padding: .076rem 0;
+  border-bottom: 1px solid #d8d8d8; }
+  .header-box .header {
+    display: flex;
+    height: 100%; }
+    .header-box .header .left-dir {
+      width: .4416rem; }
+      .header-box .header .left-dir img {
+        width: .34rem; }
+    .header-box .header .header-content {
+      flex: 1; }
+      .header-box .header .header-content span {
+        display: block;
+        font-size: .20rem;
+        text-align: center; }
+    .header-box .header .there-cir {
+      width: .4416rem; }
+      .header-box .header .there-cir img {
+        width: .34rem; }
+
+.body-box .class-box .body-class .item {
+  width: 100%;
+  overflow: hidden; }
+  .body-box .class-box .body-class .item li {
+    display: block;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    border-right: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6; }
+    .body-box .class-box .body-class .item li a {
+      display: block;
+      width: 100%; }
+      .body-box .class-box .body-class .item li a img {
+        width: 100%; }
+  .body-box .class-box .body-class .item li:nth-child(5n) {
+    border-right: 0; }
+
+.body-box .class-box .heart-buy-box .heart-buy dl {
+  background: url(http://z.dangdang.com/static/img/%E4%B9%9D%E5%AE%AB%E6%A0%BC.5e5e35d.png);
+  background-size: cover;
+  padding: 0 .13rem .13rem; }
+  .body-box .class-box .heart-buy-box .heart-buy dl dt {
+    display: flex;
+    text-align: center;
+    padding: .12rem 0 .05rem;
+    position: relative;
+    line-height: .2rem; }
+    .body-box .class-box .heart-buy-box .heart-buy dl dt label {
+      font-size: .20rem;
+      font-weight: 700;
+      flex: 1;
+      color: white; }
+    .body-box .class-box .heart-buy-box .heart-buy dl dt a {
+      font-size: .13rem;
+      position: absolute;
+      right: 0;
+      color: white; }
+  .body-box .class-box .heart-buy-box .heart-buy dl dd {
+    display: flex;
+    flex-wrap: wrap; }
+    .body-box .class-box .heart-buy-box .heart-buy dl dd a {
+      width: 1.12rem;
+      padding: .1rem .1rem .05rem;
+      box-sizing: border-box;
+      border-radius: .16rem;
+      text-align: center;
+      box-shadow: 0 0.06rem 0.13rem 0 rgba(239, 103, 137, 0.26);
+      margin: .06rem .02rem  0 0.02rem;
+      background: white; }
+      .body-box .class-box .heart-buy-box .heart-buy dl dd a div h2 {
+        font-size: .14rem;
+        color: #943dff;
+        line-clamp: 2;
+        font-weight: 400; }
+      .body-box .class-box .heart-buy-box .heart-buy dl dd a div h3 {
+        font-size: .16rem; }
+      .body-box .class-box .heart-buy-box .heart-buy dl dd a div h4 {
+        font-size: .14rem;
+        color: #943dff;
+        font-weight: 400; }
+      .body-box .class-box .heart-buy-box .heart-buy dl dd a img {
+        width: 80%;
+        display: block;
+        margin: .1rem auto 0; }
+    .body-box .class-box .heart-buy-box .heart-buy dl dd a:nth-child(3n) {
+      margin-right: 0; }
+
+.body-box .class-box .heart-buy-box .flash-sale-box {
+  position: relative;
+  background-image: url(http://z.dangdang.com/static/img/9.9-background.d4afbba.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -.2rem;
+  height: 93%;
+  margin-bottom: .12rem; }
+  .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-top {
+    width: 1.29rem;
+    margin: 0 auto;
+    height: .33rem;
+    padding-top: .15rem; }
+    .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-top img {
+      width: 100%; }
+  .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-more a {
+    position: absolute;
+    right: .14rem;
+    top: .18rem;
+    color: white;
+    font-size: .13rem; }
+  .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body {
+    display: flex;
+    padding-bottom: .12rem;
+    overflow-x: scroll; }
+    .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp {
+      width: 100%; }
+      .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a {
+        border-radius: .1rem;
+        background: white;
+        font-size: .12rem;
+        display: block;
+        width: 100px;
+        margin-right: 10px;
+        box-shadow: 0 0.03rem 0.12rem #d7d7d7; }
+        .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a p:nth-child(1) img {
+          width: 100%;
+          border-top-left-radius: .1rem;
+          border-top-right-radius: .1rem; }
+        .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a p:nth-child(2) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #323232;
+          margin: 0 .1rem; }
+        .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a p:nth-child(3) {
+          padding-top: .05rem; }
+          .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a p:nth-child(3) span:nth-child(1) {
+            display: block;
+            font-weight: 500;
+            font-size: .16rem;
+            color: red;
+            text-align: center; }
+          .body-box .class-box .heart-buy-box .flash-sale-box .flash-sale-body .flash-sale-warp a p:nth-child(3) span:nth-child(2) {
+            font-size: .11rem;
+            display: block;
+            text-align: center; }
+
+.body-box .class-box .heart-buy-box .best-seller-list {
+  width: 100%;
+  position: relative;
+  padding-bottom: .2rem; }
+  .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-tit {
+    width: .8rem;
+    color: white;
+    font-size: 14px;
+    padding: .02rem .1rem;
+    border-bottom-right-radius: .5rem;
+    background-image: linear-gradient(133deg, #f296bd, #ee3b31);
+    vertical-align: top; }
+  .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-more {
+    font-size: .13rem;
+    float: right;
+    color: #a1a1a1;
+    padding: 0 .06rem;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap {
+    padding: .09rem .06rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; }
+    .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-img {
+      width: 1.1rem;
+      height: 1.1rem; }
+    .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-warp-content {
+      width: 65%;
+      margin-left: .1rem;
+      font-size: .14rem; }
+      .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-warp-content p:nth-child(1) {
+        height: .26rem;
+        line-height: .26rem; }
+      .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-warp-content p:nth-child(2) {
+        display: inline-block;
+        height: .22rem;
+        color: white;
+        line-height: .22rem;
+        background: #f2303c;
+        margin: .05rem 0; }
+      .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-warp-content div {
+        width: 100%;
+        margin-top: .06rem;
+        display: flex;
+        justify-content: flex-end; }
+        .body-box .class-box .heart-buy-box .best-seller-list .best-seven .best-wrap .best-warp-content div img {
+          width: .13rem;
+          height: .13rem;
+          display: inline-block; }
+
+.body-box .footer-box {
+  border-top: 1px solid #e3e3e3;
+  padding: .05rem 0; }
+  .body-box .footer-box .footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: white; }
+    .body-box .footer-box .footer a {
+      width: 20%; }
+      .body-box .footer-box .footer a img {
+        margin: 0 auto;
+        width: 0.39rem;
+        height: .3575rem; }
+    .body-box .footer-box .footer a:nth-child(3) img {
+      width: .24rem;
+      height: .24rem; }
+    .body-box .footer-box .footer a:nth-child(3) span {
+      display: block;
+      font-size: .10rem;
+      text-align: center;
+      color: #f03730; }

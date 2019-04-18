@@ -1,0 +1,292 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,select,textarea{
+	margin:0;
+	padding:0;
+}
+html{
+
+    font-size:100px;
+    font-size:26.67vw;
+    height:100%;
+
+}
+body{
+	font-family:"微软雅黑",Arial;
+    font-size:100px;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+
+
+
+
+
+/* nav */
+nav{
+    width:3.4rem;
+    height:.5rem;
+   display: flex;
+   /* -webkit-justify-content:space-between; */
+   -webkit-align-items: center;
+    /* background:pink; */
+    padding:0 .1rem;
+    
+}
+
+
+
+/* 轮播图 */
+
+.slider{
+    
+    /* height:2.18rem; */
+    width:100%;
+}
+/* 轮播的图片设置 */
+.swiper-wrapper img{
+    display: block;
+    width:100%;
+}
+
+/* 豆豆的样式设置 */
+.swiper-container .swiper-pagination-bullet{
+    width:8px;
+    height: 8px;
+    background:white;
+    opacity: 1;
+    border-radius: 50%;  /* 圆的50%，方的0 */
+}
+/* 豆豆高亮颜色 */
+.swiper-container .swiper-pagination-bullet-active{
+    background:#ccaa7a;
+    width:20px;
+    border-radius: 4px;
+}
+/* 左右箭头的设置 */
+.swiper-button-prev{
+    width:20px;
+    height: 30px;
+    left:10px;
+    background:url(../img/prev.png) no-repeat center;
+    background-size:cover;
+}
+.swiper-button-next{
+    width:20px;
+    height: 30px;
+    right: 10px;
+    background:url(../img/next.png) no-repeat center;
+    background-size:cover;
+}
+/* 599186507 */
+
+
+.content{
+    overflow-y: auto;
+    -webkit-flex:1;
+}
+.n1{
+    display: -webkit-flex;
+    /* margin-left:.1rem; */
+}
+.n1 img{
+    width: .5rem;
+    height:.24rem;
+    display:block;
+}
+.n2{
+     width: 2.4rem;
+    height:.26rem;
+    display: flex;
+    -webkit-align-items: center;
+    margin:0 .17rem;
+    background: #f1f1f1;
+    border-radius:.1rem;
+    /* padding-left:.06rem; */
+    font-size:12px;
+    color:#999;
+}
+.n2 img{
+    width: .14rem;
+    height:.14rem;
+    margin:0 .01rem;
+    display:inline-block;
+}
+
+.n2 input{
+    width: 1.9rem;
+    height:.22rem;
+    outline: none;
+   border:none;
+   background: #f1f1f1;
+   
+    display:inline-block;
+}
+
+.n3{
+    margin-right:.1rem;
+
+    display: -webkit-flex;
+}
+.n3 img{
+    width: .28rem;
+    height:.28rem;
+    border-radius:50%;
+    display:block;
+}
+
+.list{
+    width:3.75rem;    
+    height:1rem;
+    background:#fcfcfc;
+    display:-webkit-flex;
+  justify-content:space-around;
+  -webkit-align-items: center;
+
+}
+
+.list a img{
+    width:.44rem;
+    height:.44rem;
+    display: block;
+}
+.ban_one{
+    width:3.75rem; 
+    height:1.36rem;
+    
+}
+.ban_one img{
+    width:3.75rem;    
+    height:1.36rem;
+    display: block;
+}
+.lun_bo{
+    width:3.75rem; 
+    /* height:2.5rem; */
+    background:white;
+    
+}
+.lunbo a{
+    width:3.75rem; 
+   display: flex; 
+}
+.lunbo a img{
+    width:100%; 
+    height:100%;
+   
+    
+}
+.pin{
+    width:3.75rem; 
+    height:.5rem;
+    line-height:.5rem;
+    /* background:blue; */
+    display: -webkit-flex;
+}
+ .pin p{
+    width:3.75rem; 
+    height:.5rem;
+    font-size:.08rem;
+    color:#333333;
+    display: -webkit-flex;
+    justify-content:center;
+}
+.pin p a{
+    width:.24rem; 
+    height:.4rem;
+    border-bottom:2px solid #ccaa7a;
+}
+.lang_qin{
+    width:3.75rem; 
+    height:.8rem;
+    
+    display: -webkit-flex;
+    text-align:center;
+    
+}
+.lang_qin img{
+    flex:33.3%;
+    width:1.24rem; 
+    height:.8rem;
+    display:block;
+    flex-wrap:wrap;  
+}
+.bao{
+    width:3.75rem; 
+    height:1.8rem; 
+}
+.bao img{
+    width:3.75rem; 
+    height:1.8rem;
+    display:block;  
+}
+.hang{
+    width:3.75rem; 
+    height:2.1rem;
+    /* background:pink; */
+    display: -webkit-flex;
+    overflow-x: auto;
+}
+.hang a{
+    display:block;
+    width:1.55rem; 
+    height:2.1rem;
+    margin-right:.1rem;
+    flex-shrink: 0; 
+}
+
+.hang a img{
+    width:1.55rem; 
+    height:2.1rem; 
+    display:block;
+}
+/* foot
+ */
+.foot{
+    width:3.75rem; 
+    height:1.2rem; 
+
+}
+.foot a img{
+    width:3.75rem; 
+    height:1.2rem;
+}
+.food{
+    width:100%; 
+    height:.5rem;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+
+}
+.food a{
+    
+    display:block;
+    display: -webkit-flex;
+    -webkit-flex-direction:column; 
+    padding-top:.05rem;
+
+}
+.food a img{
+    height:.26rem;
+    width: .26rem;
+    display:block;
+    
+   margin:0 auto;
+}
+.food a span{
+    height:.19rem;
+    line-height: .19rem;
+    display:block;
+    font-size:.1rem;
+    color: #333333;
+    
+}

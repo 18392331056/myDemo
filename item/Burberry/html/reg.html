@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>reg</title>
+<link rel="stylesheet" href="../css/reg.css">
+</head>
+<body>
+<!-- head -->
+<div class="head" id="head">
+    <ul>
+        <li>
+            <a href="">BURBERRY</a>
+        </li>
+        <li>
+            <img src="../img/7.png">
+        </li>
+        <li>
+            <img src="../img/8.png">
+            <span>0</span>
+        </li>
+        <li>
+            <img src="../img/9.png" id="li_img">
+            <div class="click" id="click">
+                <p>
+                    <span>主页</span>
+                    <span id="span_img">×</span>
+                </p>
+                <p></p>
+                <p class="pi">
+                    <span>时装秀</span>
+                    <span>></span>
+                </p>
+                <p class="pi">
+                    <span>女士</span>
+                    <span>></span>
+                </p>
+                <p class="pi"> 
+                    <span>男士</span>
+                    <span>></span>
+                </p>
+                <p class="pi">
+                    <span>儿童</span>
+                    <span>></span>
+                </p>
+                <p class="pi">
+                    <span>Trench 风衣</span>
+                    <span>></span>
+                </p>
+                <p class="pi">
+                    <span>封面故事</span>
+                    <span>></span>
+                </p>
+                <p></p>
+            </div>
+            <div class="zyc" id="zyc"></div>
+        </li>
+    </ul>
+</div>  
+<!-- bod -->
+<div class="bod">
+    <div class="img_box">
+        <img src="../img/26.png" alt="">
+    </div>
+    <div class="imp">
+        <ul>
+            <li>
+                <span>登录</span>
+                <span>注册</span>
+            </li>
+            <li>您的Burberry收藏夹商品以及个人资料信息将在精品店以及官网Burrerry.com备案保存以供随时调取</li>
+            <li>
+                <div></div>
+                <span>先生</span>
+                <div></div>
+                <span>女士</span>
+            </li>
+            <li>
+                <span>姓氏 *</span>
+                <span>名字 *</span>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+            </li>
+            <li>电子邮箱 *</li>
+            <li></li>
+            <li>电话号码 *</li>
+            <li></li>
+            <li>密码 *</li>
+            <li>
+                <img src="../img/28.png" alt="">
+                <span>显示</span>
+            </li>
+            <li>
+                注册
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    window.onload = function(){
+        $("#li_img").onclick = function(){
+		$("#click").style.display = "block";
+		$("#zyc").style.display = "block";
+		$("#click").style.zIndex = "5";
+    }
+    
+
+	    $("#span_img").onclick = function(){
+		$("#click").style.display = "none";
+		$("#zyc").style.display = "none";
+    }
+    
+
+
+    function $(str){
+		if(str.charAt(0)=="#"){
+			return document.getElementById(str.substring(1));
+		}else if(str.charAt(0)=="."){
+			return document.getElementsByClassName(str.substring(1));
+		}else{
+			return document.getElementsByTagName(str);
+		}
+	}
+}
+
+
+</script>

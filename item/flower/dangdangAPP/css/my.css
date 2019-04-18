@@ -1,0 +1,202 @@
+.header-box {
+  width: 100%;
+  padding: .076rem 0;
+  border-bottom: 1px solid #d8d8d8; }
+  .header-box .header {
+    display: flex;
+    height: 100%; }
+    .header-box .header .left-dir {
+      width: .4416rem; }
+      .header-box .header .left-dir img {
+        width: .26rem; }
+    .header-box .header .header-content {
+      flex: 1; }
+      .header-box .header .header-content span {
+        display: block;
+        font-size: .18rem;
+        text-align: center; }
+    .header-box .header .there-cir {
+      width: .4416rem; }
+      .header-box .header .there-cir img {
+        width: .26rem; }
+
+.content-box {
+  width: 100%; }
+  .content-box .userinfo {
+    height: 1.15rem;
+    background: url(http://img61.ddimg.cn/upload_img/00610/home/user-bg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .content-box .userinfo a {
+      height: .4rem;
+      width: 1.2rem;
+      border: 1px solid white;
+      font-size: .16rem;
+      color: white;
+      border-radius: .2rem;
+      line-height: .4rem; }
+  .content-box .collect-box {
+    width: 100%; }
+    .content-box .collect-box .collect {
+      display: flex;
+      border-bottom: 1px solid #f6f6f6;
+      padding: .09rem 0; }
+      .content-box .collect-box .collect a {
+        font-size: .13rem;
+        width: 33.3333333333%;
+        text-align: center;
+        border-right: 1px solid #e5e5e5; }
+      .content-box .collect-box .collect a:nth-child(3) {
+        border-right: 0; }
+  .content-box .my-order {
+    background: #eeeeee; }
+    .content-box .my-order .order-item {
+      background: white url(http://home.m.dangdang.com/images/rightarrow_new.png) no-repeat 96% center;
+      background-size: .08rem;
+      display: block;
+      font-size: .14rem;
+      position: relative;
+      color: #4d525d;
+      padding: .11rem 7% .11rem .13rem;
+      line-height: .22rem;
+      border-bottom: 1px solid #f6f6f6; }
+      .content-box .my-order .order-item img {
+        float: left;
+        height: .22rem;
+        margin-right: .08rem;
+        font-size: .14rem; }
+      .content-box .my-order .order-item em {
+        float: right;
+        font-size: .13rem;
+        font-style: normal;
+        color: #999; }
+    .content-box .my-order .vip {
+      margin: .1rem 0;
+      border-bottom: 0; }
+    .content-box .my-order .address {
+      margin-bottom: .1rem; }
+    .content-box .my-order .my-serve {
+      width: 100%;
+      display: flex; }
+      .content-box .my-order .my-serve a {
+        display: block;
+        width: 33.33333333333%;
+        height: .53rem;
+        background: white;
+        text-align: center;
+        padding-top: .08rem; }
+        .content-box .my-order .my-serve a img {
+          width: .23rem;
+          height: .23rem;
+          margin: 0 auto; }
+        .content-box .my-order .my-serve a span {
+          display: block;
+          font-size: .13rem; }
+      .content-box .my-order .my-serve a:nth-child(1) {
+        background-image: url(url(http://img60.ddimg.cn/upload_img/00487/11111/fukuan-07.png)); }
+  .content-box .like-box {
+    background: #eeeeee; }
+    .content-box .like-box .like-tit {
+      padding: .1rem 0; }
+      .content-box .like-box .like-tit .tit {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 .4rem;
+        background: #eeeeee;
+        padding: 0 .2rem;
+        overflow: hidden; }
+        .content-box .like-box .like-tit .tit .like-tit-img {
+          width: .18rem;
+          height: .18rem;
+          display: block;
+          background: url(../img/yes.png) center center;
+          background-size: 100% 100%; }
+        .content-box .like-box .like-tit .tit span {
+          display: block;
+          font-size: .13rem; }
+        .content-box .like-box .like-tit .tit ::before {
+          content: "";
+          width: .3rem;
+          height: 1px;
+          position: absolute;
+          top: .1rem;
+          right: 20px;
+          background: #dadada; }
+        .content-box .like-box .like-tit .tit ::after {
+          content: "";
+          width: .3rem;
+          height: 1px;
+          position: absolute;
+          top: .1rem;
+          left: 20px;
+          background: #dadada; }
+    .content-box .like-box .goods-box {
+      text-align: left;
+      overflow: hidden; }
+      .content-box .like-box .goods-box li:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 1px; }
+      .content-box .like-box .goods-box .goods-item {
+        width: 50%;
+        float: left;
+        margin-bottom: 2px;
+        padding-right: 1px;
+        box-sizing: border-box; }
+        .content-box .like-box .goods-box .goods-item a {
+          display: block;
+          font-size: .13rem;
+          background: white; }
+          .content-box .like-box .goods-box .goods-item a img {
+            width: 100%; }
+          .content-box .like-box .goods-box .goods-item a .img-tit {
+            font-size: .13rem;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            padding: 0 .08rem; }
+          .content-box .like-box .goods-box .goods-item a .model-time {
+            font-size: .12rem;
+            padding: 0 .08rem;
+            margin-top: .05rem; }
+            .content-box .like-box .goods-box .goods-item a .model-time span:nth-child(1) {
+              color: red;
+              border: 1px solid red; }
+            .content-box .like-box .goods-box .goods-item a .model-time span:nth-child(2) {
+              color: red;
+              border: 1px solid red; }
+            .content-box .like-box .goods-box .goods-item a .model-time span:nth-child(3) {
+              background: red;
+              color: white;
+              border: 1px solid white; }
+          .content-box .like-box .goods-box .goods-item a .price {
+            margin-top: .05rem;
+            color: red;
+            font-size: .12rem;
+            padding: 0 .08rem; }
+            .content-box .like-box .goods-box .goods-item a .price span {
+              color: red;
+              font-size: .16rem; }
+
+.footer-box {
+  border-top: 1px solid #e3e3e3;
+  padding: .05rem 0; }
+  .footer-box .footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: white; }
+    .footer-box .footer a {
+      width: 20%; }
+      .footer-box .footer a img {
+        margin: 0 auto;
+        width: 0.39rem;
+        height: .3575rem; }

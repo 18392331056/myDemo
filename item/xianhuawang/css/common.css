@@ -1,0 +1,36 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td,div{
+	margin:0;
+	padding:0;
+}
+html,body{
+
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+  
+}
+body{
+	font-family: "微软雅黑",Arial;
+	 display:flex; 
+    flex-direction:column; 
+    background: #fff;
+ 
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:focus{
+    outline: none;
+}
+section{
+    display: block;
+}

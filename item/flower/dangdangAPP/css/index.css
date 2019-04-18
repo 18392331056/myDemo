@@ -1,0 +1,355 @@
+header {
+  display: -webkit-flex; }
+  header .logo {
+    height: 0.4766rem;
+    width: .5633rem; }
+    header .logo a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      background-image: url(../img/logo.png);
+      background-repeat: no-repeat;
+      background-position: center center; }
+  header .search-box {
+    height: 0.3rem;
+    width: 3.0134rem;
+    margin: auto 0; }
+    header .search-box .serch-heaer {
+      display: -webkit-flex; }
+      header .search-box .serch-heaer .search-img {
+        height: 0.30rem;
+        width: .28rem;
+        background: #e8ecf0;
+        border-top-left-radius: .15rem;
+        border-bottom-left-radius: .15rem; }
+        header .search-box .serch-heaer .search-img img {
+          width: .26rem;
+          height: .26rem;
+          position: absolute;
+          top: .12rem;
+          left: .65rem; }
+      header .search-box .serch-heaer .search-input {
+        width: 2.5259rem;
+        height: .30rem;
+        background: #e8ecf0;
+        border: none;
+        border-top-right-radius: .15rem;
+        border-bottom-right-radius: .15rem;
+        padding-left: .08rem; }
+  header .header-list {
+    width: 0.5633rem;
+    height: .4766rem;
+    display: flex;
+    align-items: center; }
+    header .header-list img {
+      width: 0.2933rem;
+      height: 0.2266rem;
+      margin: 0 auto; }
+
+section .top-box {
+  position: relative; }
+  section .top-box .top-banner {
+    width: 100%;
+    height: 1.1917rem;
+    background: yellow;
+    overflow: hidden;
+    position: relative; }
+    section .top-box .top-banner .banner-box {
+      width: 900%;
+      display: flex;
+      position: absolute; }
+      section .top-box .top-banner .banner-box .top-banner-item {
+        display: block; }
+      section .top-box .top-banner .banner-box img {
+        width: 100%;
+        height: 1.1917rem; }
+  section .top-box .top-banner-cir {
+    position: absolute;
+    right: .08rem;
+    bottom: .04rem; }
+    section .top-box .top-banner-cir .banner-cir {
+      width: .24rem;
+      height: .2rem;
+      float: left;
+      background-image: url(../img/top-cir1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 80%; }
+    section .top-box .top-banner-cir .cir-white {
+      width: .24rem;
+      height: .2rem;
+      background-image: url(../img/top-cir2.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 80%; }
+
+section .activities-section .activities-box img {
+  width: 100%; }
+
+section .space {
+  height: 10px;
+  width: 100%;
+  background: #eff4fa;
+  line-height: 0; }
+
+section .book-box {
+  margin-bottom: 0.1rem; }
+  section .book-box .book-class .books ul {
+    overflow: hidden;
+    display: block; }
+    section .book-box .book-class .books ul .books-item {
+      width: 20%;
+      display: block;
+      float: left; }
+      section .book-box .book-class .books ul .books-item a {
+        display: block; }
+        section .book-box .book-class .books ul .books-item a img {
+          display: block;
+          width: 100%;
+          height: 0.8219rem; }
+
+section .brand-box .brand-top img {
+  width: 100%;
+  box-sizing: border-box; }
+
+section .brand-box .brand-bottom {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  section .brand-box .brand-bottom .brand-banner-box {
+    width: 100%;
+    display: block; }
+    section .brand-box .brand-bottom .brand-banner-box .brand-banner {
+      display: block;
+      margin-left: 0;
+      width: 400%;
+      overflow: hidden; }
+      section .brand-box .brand-bottom .brand-banner-box .brand-banner .brand-item {
+        width: 25%;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        overflow: hidden; }
+        section .brand-box .brand-bottom .brand-banner-box .brand-banner .brand-item dl dd {
+          float: left;
+          width: 20%;
+          box-sizing: border-box; }
+          section .brand-box .brand-bottom .brand-banner-box .brand-banner .brand-item dl dd a img {
+            width: 100%; }
+
+section .today-seckill-box .today-seckill .seckill-top img {
+  width: 100%; }
+
+section .today-seckill-box .today-seckill .seckill-body {
+  display: flex;
+  overflow-x: auto; }
+  section .today-seckill-box .today-seckill .seckill-body .seckill-shopping .goods-list {
+    padding: 0.05rem;
+    width: 1.04rem; }
+    section .today-seckill-box .today-seckill .seckill-body .seckill-shopping .goods-list img {
+      width: 100%; }
+    section .today-seckill-box .today-seckill .seckill-body .seckill-shopping .goods-list .goods-tit {
+      font-size: 14px; }
+    section .today-seckill-box .today-seckill .seckill-body .seckill-shopping .goods-list .goods-price {
+      font-size: .16rem;
+      color: red; }
+    section .today-seckill-box .today-seckill .seckill-body .seckill-shopping .goods-list .goods-oldprice {
+      font-size: .14rem;
+      color: gray;
+      text-decoration-line: line-through; }
+
+section .today-seckill-box .seckill-time {
+  width: 100%;
+  font-size: 14px;
+  text-align: center; }
+  section .today-seckill-box .seckill-time .seckill-time-box {
+    margin: 0 auto;
+    width: 2rem;
+    height: .3rem;
+    line-height: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section .today-seckill-box .seckill-time .seckill-time-box span {
+      display: inline-block;
+      height: .28rem;
+      width: .2rem;
+      background: black;
+      border-radius: .05rem;
+      margin: 0 .05rem;
+      color: white; }
+    section .today-seckill-box .seckill-time .seckill-time-box .time-second {
+      background: #f33448; }
+
+section .advance-notice-box {
+  width: 100%; }
+  section .advance-notice-box .advance-notice img {
+    width: 100%; }
+
+section .weipin-box .weipin-tit {
+  height: 0.6759rem; }
+  section .weipin-box .weipin-tit .weipin-title {
+    height: 0.4441rem; }
+    section .weipin-box .weipin-tit .weipin-title img {
+      width: 100%;
+      height: 100%; }
+  section .weipin-box .weipin-tit .weipin-time {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    section .weipin-box .weipin-tit .weipin-time p {
+      font-size: 12px;
+      display: flex;
+      align-items: center; }
+      section .weipin-box .weipin-tit .weipin-time p img {
+        display: inline-block;
+        width: .15rem;
+        height: .15rem;
+        margin-left: .1rem;
+        vertical-align: middle; }
+
+section .weipin-box .weipin-body-box .weipin-body .weinpin-item {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  section .weipin-box .weipin-body-box .weipin-body .weinpin-item li {
+    border: 1px solid #eff4fa;
+    height: 1.7239rem;
+    width: 33.33333333333333%;
+    float: left;
+    display: block;
+    box-sizing: border-box; }
+    section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .title {
+      display: block;
+      padding: .13rem 0.09rem 0 0.09rem;
+      text-align: center; }
+      section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .title b {
+        display: block;
+        font-size: .16rem; }
+      section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .title i {
+        display: block;
+        font-size: 14px;
+        color: #9b39e2;
+        margin-bottom: .06rem; }
+    section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .image {
+      display: block; }
+      section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .image img {
+        width: 1.0833rem;
+        height: 1.0833rem;
+        margin: 0 auto; }
+      section .weipin-box .weipin-body-box .weipin-body .weinpin-item li .image .tit-img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+
+section .stationey-box {
+  overflow: hidden; }
+  section .stationey-box .stationey .stationey-tit {
+    width: 100%; }
+    section .stationey-box .stationey .stationey-tit img {
+      width: 100%; }
+  section .stationey-box .stationey .stationey-banner {
+    width: 100%; }
+    section .stationey-box .stationey .stationey-banner img {
+      width: 100%; }
+  section .stationey-box .stationey .stationey-body {
+    width: 100%; }
+    section .stationey-box .stationey .stationey-body .body-left {
+      width: 50%;
+      float: left;
+      height: 1.86rem;
+      overflow: hidden;
+      position: relative; }
+      section .stationey-box .stationey .stationey-body .body-left a {
+        display: block;
+        height: 1.86rem; }
+        section .stationey-box .stationey .stationey-body .body-left a .body-left-tit {
+          display: block;
+          height: 100%;
+          float: left;
+          padding: .07rem .05rem 0 .08rem; }
+          section .stationey-box .stationey .stationey-body .body-left a .body-left-tit span {
+            display: block; }
+            section .stationey-box .stationey .stationey-body .body-left a .body-left-tit span b {
+              display: block;
+              font-size: .16rem; }
+            section .stationey-box .stationey .stationey-body .body-left a .body-left-tit span i {
+              display: block;
+              font-size: 12px;
+              color: #ef2933; }
+        section .stationey-box .stationey .stationey-body .body-left a .body-left-img {
+          display: inline-block;
+          width: 1.3108rem;
+          height: 1.3108rem;
+          position: absolute;
+          bottom: 0; }
+          section .stationey-box .stationey .stationey-body .body-left a .body-left-img img {
+            width: 100%; }
+        section .stationey-box .stationey .stationey-body .body-left a .right-line {
+          background: #eff4fa;
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0; }
+    section .stationey-box .stationey .stationey-body .body-right {
+      width: 50%;
+      display: block;
+      float: left; }
+      section .stationey-box .stationey .stationey-body .body-right .body-top {
+        position: relative; }
+        section .stationey-box .stationey .stationey-body .body-right .body-top a {
+          position: relative;
+          display: block;
+          height: .93rem; }
+          section .stationey-box .stationey .stationey-body .body-right .body-top a .right-content {
+            display: table;
+            margin-right: .8rem;
+            padding-left: .1rem;
+            height: 100%;
+            float: left;
+            box-sizing: border-box; }
+            section .stationey-box .stationey .stationey-body .body-right .body-top a .right-content span {
+              display: table-cell;
+              height: 100%;
+              vertical-align: middle; }
+              section .stationey-box .stationey .stationey-body .body-right .body-top a .right-content span b {
+                display: block;
+                font-size: .16rem; }
+              section .stationey-box .stationey .stationey-body .body-right .body-top a .right-content span i {
+                display: block;
+                font-size: 14px;
+                color: #ef2933; }
+          section .stationey-box .stationey .stationey-body .body-right .body-top a .right-img {
+            display: block;
+            width: 0.8585rem;
+            height: 0.8585rem;
+            position: absolute;
+            right: 0; }
+            section .stationey-box .stationey .stationey-body .body-right .body-top a .right-img img {
+              width: 100%;
+              height: 100%; }
+          section .stationey-box .stationey .stationey-body .body-right .body-top a .bottom-line {
+            height: 1px;
+            width: 100%;
+            background: #e8ecf0;
+            position: absolute;
+            bottom: 0;
+            left: 0; }
+
+section .footer-box {
+  border-top: 1px solid #e3e3e3;
+  padding: .05rem 0; }
+  section .footer-box .footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: white; }
+    section .footer-box .footer a {
+      width: 20%; }
+      section .footer-box .footer a img {
+        margin: 0 auto;
+        width: 0.39rem;
+        height: .3575rem; }

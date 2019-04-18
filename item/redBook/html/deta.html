@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>deta</title>
+<link rel="stylesheet" href="../css/deta.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+<!-- header -->
+<header>
+    <img src="../img/13.png" alt=""> 
+    <img src="../img/38.png" alt="">
+</header>
+<!-- center -->
+<div class="center">
+    <!-- section -->
+    <section>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/37.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/39.png" alt=""></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <ul class="sec_ul1">
+            <li>视频</li>
+            <li>图片</li>
+        </ul>
+        <ul class="sec_ul2">
+            <li>
+                <img src="../img/40.png" alt="">
+            </li>
+            <li>
+                <img src="../img/41.png" alt="">
+            </li>
+        </ul>
+    </section>
+    <!-- speak -->
+    <div class="speak">
+        <ul class="sp_ul1">
+            <li>限时特价</li>
+            <li>￥134.1</li>
+            <li>￥297</li>
+            <li>4.5折</li>
+            <li>包税</li>
+            <li>包邮</li>
+        </ul>
+        <p>距离活动结束还剩</p>
+        <ul class="sp_ul2">
+            <li>仙气慵懒风毛衣 · 春游季穿搭学生党宽松显摆气质卡萨丁房间卡纠纷解决的房价 灰蓝色 M</li>
+            <li>
+                <img src="../img/42.png" alt="">
+                <span>心愿单</span>
+            </li>
+        </ul>
+        <h3>
+            <span>品牌来自中国</span>
+            <span>KUOSE阔色</span>
+        </h3>
+    </div>
+    <!-- ruse -->
+    <div class="ruse">
+        <div>
+            <p>
+                新人 : 领取新人书卷大礼包，一单最高科盛5元
+                <span>></span>
+            </p>
+            <p>
+                新人 : 领取新人书卷大礼包，一单最高科盛5元
+                <span>></span>
+            </p>
+        </div>
+    </div>
+    <!-- new  -->
+    <div class="new">
+        <p>看了这件商品的人也看了</p>
+        <div class="n_box">
+            <ul>
+                <li>
+                    <img src="../img/20.png" alt="">
+                </li>
+                <li>Pwu 烟酰胺樱花香沐浴露  500ml*2
+                </li>
+                <li>￥139.9</li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/20.png" alt="">
+                </li>
+                <li>Pwu 烟酰胺樱花香沐浴露  500ml*2
+                </li>
+                <li>￥139.9</li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/20.png" alt="">
+                </li>
+                <li>Pwu 烟酰胺樱花香沐浴露  500ml*2
+                </li>
+                <li>￥139.9</li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/20.png" alt="">
+                </li>
+                <li>Pwu 烟酰胺樱花香沐浴露  500ml*2
+                </li>
+                <li>￥139.9</li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/20.png" alt="">
+                </li>
+                <li>Pwu 烟酰胺樱花香沐浴露  500ml*2
+                </li>
+                <li>￥139.9</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/swiper.min.js"></script>
+<script>
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 水平切换选项
+            loop: true, // 循环模式选项
+            speed: 300, //图片划过速度
+            //自动播放
+            autoplay: {
+                delay: 3000, //延迟播放下一张图片
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        })
+    }
+</script>

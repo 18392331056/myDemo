@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#box{
+				position: relative;
+				width: 400px;
+				height: 300px;
+			}
+			
+			#box img{
+				position: absolute;
+				left:0px;
+				top:0px;
+				width: 100%;
+				height: 100%;	
+				z-index: 1;			
+			}
+
+			#box img:nth-child(1){
+				z-index:2;
+			}
+
+			ul{
+				position: absolute;
+				list-style: none;
+				right: 20px;
+				bottom: 20px;
+				z-index: 3;
+			}
+			li{
+				float:left;
+				width:10px;
+				height: 10px;
+				margin-right: 10px;
+				background-color: pink;
+				border-radius: 50%;
+			}
+			ul li:nth-child(1){
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img  src="img/timg (1).jpg"  />
+			<img  src="img/timg (2).jpg"  />
+			<img  src="img/timg (3).jpg"  />
+			<img  src="img/timg (4).jpg"  />
+			<img  src="img/timg (5).jpg"  />
+			<ul id="doudouBox">
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+			</ul>
+		</div>	
+	</body>
+</html>
+<script type="text/javascript">
+
+let myTimer = null;
+let currIndex = 0;
+var arr=["http://www.baidu.com","http://www.taobao.com","http://www.jd.cn","http://www.1000phone.com","http://www.163.com"];
+
+//自动播放
+function autoPlay(){
+	if(myTimer!=null){
+		return;
+	}
+	myTimer = setInterval(function(){
+		//一、数据处理
+		currIndex=currIndex+1;
+
+		if(currIndex>=5){
+			currIndex=0;
+		}
+
+		//二、外观呈现
+		showImg(currIndex);
+
+	},1000);
+
+}
+//停止播放	
+function stopPlay(){
+	window.clearInterval(myTimer);
+	myTimer = null;
+}
+
+//跳转到对应的图片上
+function goImg(index){
+	//一、数据处理
+	currIndex = index;
+
+	if(currIndex>=5 || currIndex<0){
+		currIndex=0;
+	}
+
+	//二、外观呈现
+	showImg(currIndex);
+}
+
+//显示指定的图片
+function showImg(ord){
+	//1、改图片
+	let imgDoms = $("#box").children;
+	for(let i=0;i<imgDoms.length-1;i++){
+		imgDoms[i].style.zIndex = 1;
+	}
+	imgDoms[ord].style.zIndex = 2;
+	//2、改豆豆
+	let liDoms = $("#doudouBox").children;
+	for(var i=0;i<liDoms.length;i++){
+		liDoms[i].style.backgroundColor = "pink";
+	}
+	liDoms[ord].style.backgroundColor = "red";
+}
+
+window.onload = function(){
+	//1、自动播放
+	autoPlay();
+
+	//2、鼠标进入停止播放
+	$("#box").onmouseover = function(){
+		stopPlay();
+	}
+
+	//3、鼠标离开继续播放
+	$("#box").onmouseout = function(){
+		autoPlay();
+	}
+
+	//4、点豆豆跳到对应的图片上
+	// $("#doudouBox").onclick = function(event){
+	// 	let evt = event || window.event;
+	// 	if(evt.target.tagName.toLowerCase()=="li"){
+	// 		goImg(evt.target.getAttribute("index"));
+	// 	}
+	// }
+
+	let liDoms = $("#doudouBox").children;
+	for(var i=0;i<liDoms.length;i++){
+		liDoms[i].setAttribute("index",i);
+		//绑定了事件
+		liDoms[i].onclick = function(event){
+			let evt = event || window.event;
+			// console.log(i);
+			// goImg(i);//循环的时候，不会调用goImg();
+			goImg(this.getAttribute("index"));
+			evt.stopPropagation();
+		}
+	}
+
+	
+
+	//5、超链
+	$("#box").onclick = function(){
+		location.href = arr[currIndex];
+	}
+
+}
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+</script>
+

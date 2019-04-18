@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<body>
+<!-- header	 -->
+	<header>
+		<div class="h_left">
+			<a href="#"><p>LOUIS VUITTON</p></a>
+		</div>
+		<div class="h_zhong">
+			<a href="#">LV NOW</a>
+			<a href="#">路易威登世界</a>
+			<a href="#">女士</a>
+			<a href="#">男士</a>
+			<a href="#">专卖店</a>
+		</div>
+		<div class="h_right">
+			<a href="#"><i class="iconfont icon-fangdajing"></i></a>
+			<i class="iconfont icon-icon-"></i>
+			<a id="gz" href="#">
+				<img src="image/LV.PNG"/>
+					<div class="mylv" id="Mylv">
+						<div class="sjx">
+							<div class="triangles"></div>
+						</div>
+						<div class="mylv_box">
+							<div class="mylv_l">
+								<p>会员登录</p>
+								<p>我已有一个账户</p>
+								<p>用户名(手机号/电子邮箱地址)*</p>
+								<input type="text" id="btn01" placeholder="手机号/邮箱"/>
+								<p>密码*</p>
+								<input type="password" id="btn02"/>
+								<p>忘记密码？</p>
+								<input type="button" id="btn1" value="登录"/>
+							</div>
+							<div class="mylv_r">
+								<p>创建新的账户<button id="error">×</button></p>
+								<p>创建mylv账户后，你可以通过任何设备：<br/>·查询您的网上订单以及历史购买记录<br/>·管理您的个人信息<br/>·获取最新的路易威登电子报<br/>·储存您的购物袋以及愿望清单
+								</p>
+								<input type="button" id="btn2" value="创建mylv账户">
+							</div>
+						</div>
+					</div>
+			</a>
+			<a href="#"><i class="iconfont icon-icon4"></i></a>
+			<a href="#"><i class="iconfont icon-wenhao"></i></a>
+			<p>400 6588 555</p>
+		</div>
+	</header>	
+<div class="box">
+	<div class="up">
+		<p>会员登录</p>
+	</div>
+	<div class="down">
+		<div class="left">
+			<p>已有帐户请登录</p>
+			<p>用户名（手机号/电子邮箱地址）*</p>
+			<input type="text" name="phone" id="shuzi2">
+			<p>密码*</p>
+			<input type="password" name="password1" id="pwd1">
+			<div class="wangji">
+				<a href="#">忘记密码？</a>
+			</div>
+			<input type="button" name="" id="denglu" value="登录">
+		</div>
+		<div class="right">
+			<img src="image/denglu.jpg"/>
+		</div>
+	</div>	
+</div>
+<!-- footer	 -->
+	<footer>
+		<div class="s_up">
+			<a href="#">路易威登</a>
+			<p id="wode">> 我的路易威登</p>
+			<p id="dingduan">︿</p>
+		</div>
+		<div class="x_down">
+			<a href="#">中国大陆</a>
+			<a href="#">订阅电子版</a>
+			<a href="#">联系我们</a>
+			<a href="#">应用程序</a>
+			<a href="#">关注我们</a>
+			<a href="#">法律声明和隐私条款</a>
+			<a href="#">沪ICP备09069024号</a>
+			<a href="#">电子营业执照</a>
+			<a href="#">出版物经营许可证</a>
+			<a href="#">沪公网安备</a>
+			<p>招聘</p>
+			<p>网站地图</p>
+		</div>
+	</footer>		
+</body>
+</html>
+<script type="text/javascript" src="js/login.js"/></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"/></script>
+<script type="text/javascript">
+
+	window.onload = function(){
+
+		//mylv点击
+		$("#gz").click(function(){
+			$("#Mylv").css({"display":"block"});
+		});
+
+		$("#error").click(function(){
+			$("#Mylv").fadeToggle("slow","linear");
+		});
+
+		$("#denglu").onclick = function(){
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.open('POST','php/login.php',true);
+
+			xhr.onreadystatechange = function(){
+
+				if(xhr.readyState ==4 && xhr.status==200){
+					if(xhr.responseText=='1'){
+						//保存cookie
+						 saveCookie("phone",$("#shuzi2").value,7);
+						saveCookie("password1",$("#pwd1").value,7);
+						//跳转首页
+						alert("登录成功");
+						location.href = "index.html";
+						
+					}else{
+						alert("登录失败");
+					}
+				}
+			}
+			xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+			//发送
+			xhr.send("phone="+$("#shuzi2").value+"&password1="+$("#pwd1").value);
+		}
+
+		
+
+	}
+
+	function $(str){   //id  class tagname
+	if(str.charAt(0) == "#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0) == "."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+</script>

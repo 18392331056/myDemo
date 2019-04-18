@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+
+/*content*/
+.centers{
+	width:100%;
+	/*height:2996px;*/
+	/*margin:0 auto;*/
+    background:white; 
+
+}
+.content{
+	width:980px;
+	/*height:2996px;*/
+    /*background:red; */
+	
+	margin:0 auto;
+	overflow:hidden;
+
+}
+.bread_nav{
+	margin-bottom: 30px;
+    height: auto!important;
+    min-height: 20px;
+    overflow: hidden;
+  	
+    display: block;
+    clear: both;
+    margin: 0 0 30px;
+}
+.bread_nav a,.bread_nav span{
+	 display: inline-block;
+    height: 32px;
+    color: #b2b2b2;
+    font-size:12px;
+}
+.content h1{
+	font-size: 100%;
+	font-weight: normal;
+	font-family: Microsoft YaHei,STHeiti,sans-serif; 
+	display: block;
+   
+}
+.content h1 span{
+	font-size: 24px;
+    color: #670205;
+    line-height: 36px;
+   
+    text-indent: 0;
+    display: block;
+    height: 36px;
+}
+.lie{
+	width:980px;
+	/*height:2870px;*/
+	overflow:hidden;
+	
+}
+.lie_left{
+	/*background:green;*/
+	width:124px;
+	height:108px;
+    padding-right: 0;
+    /*padding-left: 14px;*/
+    margin-top: 50px;
+    float: left;
+}
+   
+
+.zhong h3{
+	display:inline-block;
+	float:left;
+}
+.zhong h3 a{
+	width: 93px;
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight:normal;
+    height: 22px;
+    padding: 7px 0;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.jianjiao{
+
+	width:0;
+	height:0;
+	border:6px solid transparent;
+    display:inline-block;
+    left:20px;
+    top:20px;
+    
+	border-left-color:gray;
+	float:left;
+	margin-top:13px;
+}
+
+
+/*lie_right*/
+.lie_right{
+	width: 842px;
+	/*height:2870px;*/
+	/*background:skyblue;*/
+	float:right;
+}
+.top_lie{
+	padding-left: 10px;
+    padding-right: 18px;
+    height: 24px;
+    padding-bottom: 20px;
+}
+.number{
+	float: left;
+    padding-top: 3px;
+    /*background:red;*/
+    width:514px;
+    height:23px;
+    display:inline-block;
+   
+}
+.number_one{
+
+    width:514px;
+    height:20px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: -3px;
+	
+}
+.fuhao{
+	border: 0;
+    color: #670205;
+    font-size: 14px;
+    line-height: 13px;
+    height: 13px;
+	padding: 0 8px;
+	
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    letter-spacing: 0;
+
+}
+ 
+.file_one{
+	width:0;
+    height: 0;
+    border:8px solid transparent;
+    border-right-color:#670205;
+	display:inline-block;
+	width:13px;
+	padding: 0 5px;
+	cursor: not-allowed;
+}
+
+.file_six{
+	width:0;
+    height: 0;
+    padding: 0 5px;
+    border:8px solid transparent;
+    border-left-color:#670205;
+	display:inline-block;
+
+}
+.pai_xu{
+	height: auto!important;
+    height: 30px;
+    float: left;
+    margin-right: 34px;
+    width: 150px;
+    z-index: 3;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    cursor: pointer;
+	display:inline-block;
+
+
+}
+.pai_xu span{
+	width:0;
+    height: 0;
+
+	border:6px solid transparent;
+    border-top-color:#670205;
+	display:inline-block;
+	/*line-height: 26px;*/
+	vertical-align:middle;
+	margin:0px 8px 0 8px;
+}
+.produce{
+	width:auto;
+	height:26px;
+	line-height: 26px;
+	display:inline-block;
+	float:left;
+}
+
+
+
+
+ .center_lie{
+	width:842px;
+	/*height:2772px;*/
+	/*background:yellow;*/
+	clear:both;
+	overflow: hidden;
+
+ }
+ .jiyuan{
+ 	width:280px;
+	height:462px;
+	/*background:pink;*/
+	float:left;
+ }
+.jiyuan img{
+	width:232px;
+	height:232px;
+	display:block;
+	margin:0 auto;
+}
+.price{
+	margin: 10px auto 5px;
+	width: 210px;
+    text-align: center;
+}
+.price p:first-child{
+	height:44px;
+
+}
+.yan{
+	height:64px;
+
+}
+.yan span{
+	display:block;
+
+}
+.yan span:last-child{
+	font-size: 18px;
+    line-height: 29px;
+    color: #670205;
+    margin-top: 5px;
+}
+.shop_car{
+	width: 163px;
+    margin: 0 auto;
+    height: 40px;
+    background: #7c0d02;
+    /*margin-top: 10px;*/
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+   
+   
+}
+.shop_car a{
+    font-size: 12px; 
+    color:white;
+}
+
+
+.xiang_qing{
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #ba291f;
+    margin:10px auto 0px;
+}
+.xiang_qing a{
+	display: block;
+	 color: #ba291f;
+    font-size: 14px;
+    text-align: center;
+
+}

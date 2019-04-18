@@ -1,0 +1,232 @@
+@charset "UTF-8";
+.main {
+  width: 100%;
+  overflow: hidden;
+  background: #eff4fa; }
+
+.header-search-box {
+  background: white;
+  width: 100%；
+  height：30px;
+  padding: 7px 50px 7px 40px;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative; }
+  .header-search-box .search-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background: url(../img/header-top-dir.png) no-repeat 15px center;
+    padding-left: 40px;
+    z-index: 2;
+    background-size: auto 16px; }
+  .header-search-box .search-right {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    background: url(../img/there.png) no-repeat center;
+    background-size: 23px; }
+  .header-search-box .search {
+    height: 30px;
+    border-radius: 40px;
+    position: relative;
+    padding-left: 30px; }
+    .header-search-box .search .search-text {
+      display: block; }
+      .header-search-box .search .search-text .search-content {
+        float: left;
+        display: block;
+        width: 100%;
+        border: none;
+        height: 20px;
+        padding: 5px 0;
+        outline: none;
+        background: #e4e4e4;
+        font-size: 14px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px; }
+    .header-search-box .search .header-search {
+      float: left;
+      position: absolute;
+      top: 0;
+      left: 1px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background: #e4e4e4 url(../img/search.png) no-repeat center center;
+      background-size: 22px 22px; }
+
+.main-body {
+  width: 100%;
+  display: flex; }
+  .main-body .main-menu-box {
+    height: 6.91rem;
+    overflow-y: scroll;
+    width: 21.4%; }
+    .main-body .main-menu-box .main-menu {
+      width: 100%;
+      transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+      transition-duration: 0ms;
+      transform: translate(0px, 0px) translateZ(0px); }
+      .main-body .main-menu-box .main-menu ul {
+        display: block; }
+        .main-body .main-menu-box .main-menu ul li {
+          display: block;
+          text-align: center;
+          background: white; }
+          .main-body .main-menu-box .main-menu ul li a {
+            display: block;
+            font-size: 14px;
+            height: 45px;
+            line-height: 45px; }
+        .main-body .main-menu-box .main-menu ul li:nth-child(1) {
+          background: #eff4fa;
+          color: #e53e30; }
+  .main-body .main-body-box {
+    width: 78.6%;
+    height: 6.91rem; }
+    .main-body .main-body-box .body-box {
+      background: #eff4fa;
+      width: 100%;
+      margin-left: .08rem;
+      overflow-y: scroll;
+      height: 100%; }
+      .main-body .main-body-box .body-box .body-menu img {
+        width: 100%; }
+      .main-body .main-body-box .body-box .body-book {
+        display: flex;
+        padding-top: .08rem; }
+        .main-body .main-body-box .body-box .body-book .body-books {
+          position: relative;
+          width: 49%;
+          float: left;
+          box-sizing: border-box;
+          background: white;
+          margin-right: 8px;
+          margin-bottom: .08rem; }
+          .main-body .main-body-box .body-box .body-book .body-books a {
+            height: 59px; }
+            .main-body .main-body-box .body-box .body-book .body-books a .books-tit-box {
+              display: block;
+              padding: 15px 35px 15px 10px; }
+              .main-body .main-body-box .body-box .body-book .body-books a .books-tit-box .books-tit {
+                display: block;
+                font-size: .14rem;
+                color: #212121;
+                font-weight: bold; }
+              .main-body .main-body-box .body-box .body-book .body-books a .books-tit-box .books-text {
+                display: block;
+                font-size: 12px;
+                color: #a6a6a6; }
+            .main-body .main-body-box .body-box .body-book .body-books a .books-dir {
+              position: absolute;
+              top: 0;
+              right: 0;
+              display: block;
+              height: 100%;
+              width: 35px;
+              background: url(../img/rightdir-2.png) no-repeat center;
+              background-size: 15px 15px; }
+      .main-body .main-body-box .body-box .grade-box {
+        width: 100%;
+        background: white; }
+        .main-body .main-body-box .body-box .grade-box h3 {
+          font-size: .13rem;
+          font-weight: bold;
+          height: .18rem;
+          padding: 10px 0px 7px 14px; }
+          .main-body .main-body-box .body-box .grade-box h3 span {
+            display: block; }
+        .main-body .main-body-box .body-box .grade-box .grade-body {
+          width: 100%; }
+          .main-body .main-body-box .body-box .grade-box .grade-body ul {
+            padding: 0 5px 6px;
+            display: flex; }
+            .main-body .main-body-box .body-box .grade-box .grade-body ul li {
+              float: left;
+              width: 33.33333333333%;
+              padding: 2px 0 0 0;
+              display: table-cell;
+              vertical-align: middle;
+              margin-bottom: 10px; }
+              .main-body .main-body-box .body-box .grade-box .grade-body ul li a {
+                display: block;
+                height: 81px;
+                width: 81px;
+                margin: 0 auto; }
+                .main-body .main-body-box .body-box .grade-box .grade-body ul li a img {
+                  width: 100%;
+                  height: auto; }
+              .main-body .main-body-box .body-box .grade-box .grade-body ul li span {
+                display: block;
+                font-size: 12px;
+                text-align: center;
+                height: 26px;
+                margin-top: 6px; }
+      .main-body .main-body-box .body-box .story-box {
+        background: white;
+        margin-top: .08rem; }
+        .main-body .main-body-box .body-box .story-box h3 {
+          font-size: .13rem;
+          font-weight: bold;
+          height: .18rem;
+          padding: 10px 0px 7px 14px; }
+          .main-body .main-body-box .body-box .story-box h3 span {
+            display: block; }
+        .main-body .main-body-box .body-box .story-box .story {
+          width: 100%;
+          overflow: hidden;
+          padding: 0 14px;
+          -webkit-box-sizing: border-box; }
+          .main-body .main-body-box .body-box .story-box .story li:nth-child(3n) div a span::after {
+            width: 0; }
+          .main-body .main-body-box .body-box .story-box .story .story-item {
+            display: block;
+            width: 33.33333333333%;
+            -webkit-box-sizing: border-box;
+            float: left;
+            border-bottom: 1px solid #f0f0f0; }
+            .main-body .main-body-box .body-box .story-box .story .story-item div {
+              height: 44px; }
+              .main-body .main-body-box .body-box .story-box .story .story-item div a {
+                display: block;
+                width: 100%;
+                position: relative; }
+                .main-body .main-body-box .body-box .story-box .story .story-item div a span {
+                  display: block;
+                  font-size: 12px;
+                  text-align: center;
+                  height: 44px;
+                  line-height: 44px;
+                  padding: 2px; }
+                .main-body .main-body-box .body-box .story-box .story .story-item div a ::after {
+                  content: "";
+                  height: 14px;
+                  width: 1px;
+                  background: #e1e1e1;
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  margin-top: -7px; }
+
+.footer-box {
+  border-top: 1px solid #e3e3e3;
+  padding: .05rem 0; }
+  .footer-box .footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: white; }
+    .footer-box .footer a {
+      width: 20%; }
+      .footer-box .footer a img {
+        margin: 0 auto;
+        width: 0.39rem;
+        height: .3575rem; }

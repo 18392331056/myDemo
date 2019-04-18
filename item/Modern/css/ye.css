@@ -1,0 +1,262 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "微软雅黑", Arial;
+	background: #eeeeee;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* .header */
+#header {
+	width: 100%;
+	position:fixed;
+	z-index:100;
+}
+
+.head {
+	width: 100%;
+
+	border-bottom: 1px solid #e7e7e7;
+	box-shadow: 0px 1px 1px 1px #e7e7e7;
+	background: #ffffff;
+	display: flex;
+}
+
+.top1 {
+	width: 378px;
+	height: 138px;
+
+}
+
+.top1 img {
+	display: block;
+}
+
+.top1 img:first-child {
+
+	width: 292px;
+	height: 76px;
+
+}
+
+.top1 img:last-child {
+	margin-top: 12px;
+	margin-left: 289px;
+	width: 50px;
+	height: 50px;
+
+}
+
+.top2 {
+	width: 194px;
+	height: 128px;
+	padding-top: 10px;
+	display: flex;
+}
+
+.top2 a {
+	width: 40px;
+	height: 36px;
+	display: inline-block;
+	margin-right: 26px;
+}
+
+.top2 a span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 17px;
+	background: #0e62c7;
+	border-radius: 3px;
+	font-size: 10px;
+	color: white;
+}
+
+.top2 a img {
+	display: block;
+	width: 18px;
+	height: 18px;
+}
+
+.top3 {
+	
+	width: 44%;
+	height: 120px;
+	padding-top: 18px;
+	padding-left: 184px;
+
+}
+
+.top3 input {
+	width: 80%;
+	height: 39px;
+	border: 2px solid #f7f9fa;
+	outline: none;
+	color: #2A2F43;
+	text-indent: 14px;
+}
+
+.top3 input::-webkit-input-placeholder {
+	color: #a0a1da;
+}
+
+.top3 img {
+	display: inline-block;
+	width: 21px;
+	height: 20px;
+	margin-top: 8px;
+	margin-left: 60px;
+}
+
+/* select */
+
+.select {
+    /* padding-right: 0.6%; */
+	display: flex;
+    padding-top:140px;
+    display:flex;
+    flex-direction: column;
+    margin: 0em 7.3em 0 0;
+}
+
+/* right */
+.right {
+	width: 200px;
+	/* height:100%; */
+	background: #313437;
+	text-align: center;
+	z-index: 10;
+	position: fixed;
+	right: 0;
+}
+
+.right .pd {
+	font-size: 16px;
+	color: #d69745;
+	height: 25px;
+}
+
+.biaoti {
+	height: 40px;
+	margin: 0 auto;
+	padding: 13px 0px;
+}
+
+.biaoti .com {
+	margin-left: 16px;
+}
+
+.biaoti_img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.biaoti span {
+	height: 20px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.biaoti span img {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 3px;
+}
+
+
+
+/* foot */
+
+.foot {
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	padding: 2em 0;
+	z-index: 1;
+}
+
+
+
+.foot p span {
+	font-size: 0.9em;
+	color: #0e62c7;
+	font-weight: 400;
+}
+
+.foot p a {
+	font-size: 1em;
+	color: #0e62c7;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+/* left */
+.left {
+    margin-top:32px;
+    width: 90.5%;
+   
+   /* background:pink;  */
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.left_top{
+    width:100%;
+    /* height:500px; */
+    display:flex;
+}
+.left_top a{
+    flex:1;
+    margin-top:32px;
+    /* height:500px; */
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.left_top a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.bottom{
+    margin-bottom:32px;
+}
+@media screen and (max-width:770px){
+    .right{
+        display:none;
+    }
+    .left{
+        width:97%;
+
+    }
+    .select{
+        margin-right:0px;
+    }
+    .left_top{
+        width:97%;
+    }
+}

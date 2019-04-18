@@ -1,0 +1,240 @@
+.header-box {
+  width: 100%;
+  background: white;
+  padding: .076rem 0;
+  border-bottom: 1px solid #d8d8d8;
+  position: fixed;
+  top: 0; }
+  .header-box .header {
+    display: flex;
+    height: 100%; }
+    .header-box .header .left-dir {
+      width: .4416rem; }
+      .header-box .header .left-dir img {
+        width: .26rem; }
+    .header-box .header .header-content {
+      flex: 1; }
+      .header-box .header .header-content span {
+        display: block;
+        font-size: .18rem;
+        text-align: center; }
+    .header-box .header .there-cir {
+      width: .4416rem; }
+      .header-box .header .there-cir img {
+        width: .26rem; }
+
+.body-wrap {
+  padding-top: .47rem; }
+  .body-wrap .shopping-car-box {
+    width: 100%;
+    background: #eeeeee; }
+    .body-wrap .shopping-car-box .shop-box {
+      background: white;
+      margin-bottom: .1rem; }
+      .body-wrap .shopping-car-box .shop-box .shop-name {
+        font-size: .14rem;
+        overflow: hidden;
+        border-bottom: 1px solid #eeeeee; }
+        .body-wrap .shopping-car-box .shop-box .shop-name .name {
+          height: .35rem;
+          float: left; }
+          .body-wrap .shopping-car-box .shop-box .shop-name .name p {
+            line-height: .35rem; }
+        .body-wrap .shopping-car-box .shop-box .shop-name .edit {
+          float: right;
+          height: .35rem;
+          line-height: .36rem;
+          margin-right: .1rem; }
+      .body-wrap .shopping-car-box .shop-box .shop-list {
+        overflow: hidden; }
+        .body-wrap .shopping-car-box .shop-box .shop-list .list-btn {
+          margin-top: .4rem; }
+        .body-wrap .shopping-car-box .shop-box .shop-list .list-img {
+          display: inline-block;
+          width: 1.08rem;
+          height: 1.08rem;
+          margin: .08rem .08rem .08rem 0;
+          float: left; }
+          .body-wrap .shopping-car-box .shop-box .shop-list .list-img img {
+            width: 100%; }
+        .body-wrap .shopping-car-box .shop-box .shop-list .list-content {
+          font-size: .14rem;
+          margin-top: .06rem; }
+          .body-wrap .shopping-car-box .shop-box .shop-list .list-content .goods-tit {
+            margin-top: .05rem; }
+          .body-wrap .shopping-car-box .shop-box .shop-list .list-content .goods-price {
+            color: red;
+            margin-top: .05rem; }
+          .body-wrap .shopping-car-box .shop-box .shop-list .list-content .time-skill {
+            margin-top: .05rem; }
+          .body-wrap .shopping-car-box .shop-box .shop-list .list-content .goods-des {
+            margin-top: .05rem; }
+  .body-wrap .no-goods {
+    width: 100%; }
+    .body-wrap .no-goods .goods-null {
+      width: 100%;
+      background: #f2f2f2 url(http://cart.m.dangdang.com/images/cart_null.gif) center 0.7rem no-repeat;
+      padding: 2.5rem 0 .2rem 0;
+      background-size: 2rem 1.6rem;
+      text-align: center; }
+      .body-wrap .no-goods .goods-null p {
+        font-size: .14rem;
+        line-height: .3rem;
+        text-align: center;
+        color: #777; }
+      .body-wrap .no-goods .goods-null .null-button {
+        width: 3rem;
+        margin: 0 auto;
+        overflow: hidden; }
+        .body-wrap .no-goods .goods-null .null-button a {
+          border: 1px solid #777;
+          font-size: .19rem;
+          color: #777;
+          float: left;
+          height: .325rem;
+          width: 1rem;
+          text-align: center;
+          line-height: .325rem;
+          margin: 0 .2rem;
+          border-radius: .1rem; }
+  .body-wrap .like-box {
+    background: #eeeeee; }
+    .body-wrap .like-box .like-tit {
+      padding: .1rem 0; }
+      .body-wrap .like-box .like-tit .tit {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 .4rem;
+        background: #eeeeee;
+        padding: 0 .2rem;
+        overflow: hidden; }
+        .body-wrap .like-box .like-tit .tit .like-tit-img {
+          width: .18rem;
+          height: .18rem;
+          display: block;
+          background: url(../img/yes.png) center center;
+          background-size: 100% 100%; }
+        .body-wrap .like-box .like-tit .tit span {
+          display: block;
+          font-size: .13rem; }
+        .body-wrap .like-box .like-tit .tit ::before {
+          content: "";
+          width: .3rem;
+          height: 1px;
+          position: absolute;
+          top: .1rem;
+          right: 20px;
+          background: #dadada; }
+        .body-wrap .like-box .like-tit .tit ::after {
+          content: "";
+          width: .3rem;
+          height: 1px;
+          position: absolute;
+          top: .1rem;
+          left: 20px;
+          background: #dadada; }
+    .body-wrap .like-box .goods-box {
+      text-align: left;
+      overflow: hidden; }
+      .body-wrap .like-box .goods-box li:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 1px; }
+      .body-wrap .like-box .goods-box .goods-item {
+        width: 50%;
+        float: left;
+        margin-bottom: 2px;
+        padding-right: 1px;
+        box-sizing: border-box; }
+        .body-wrap .like-box .goods-box .goods-item a {
+          display: block;
+          font-size: .13rem;
+          background: white; }
+          .body-wrap .like-box .goods-box .goods-item a img {
+            width: 100%; }
+          .body-wrap .like-box .goods-box .goods-item a .img-tit {
+            font-size: .13rem;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            padding: 0 .08rem; }
+          .body-wrap .like-box .goods-box .goods-item a .model-time {
+            font-size: .12rem;
+            padding: 0 .08rem;
+            margin-top: .05rem; }
+            .body-wrap .like-box .goods-box .goods-item a .model-time span:nth-child(1) {
+              color: red;
+              border: 1px solid red; }
+            .body-wrap .like-box .goods-box .goods-item a .model-time span:nth-child(2) {
+              color: red;
+              border: 1px solid red; }
+            .body-wrap .like-box .goods-box .goods-item a .model-time span:nth-child(3) {
+              background: red;
+              color: white;
+              border: 1px solid white; }
+          .body-wrap .like-box .goods-box .goods-item a .price {
+            margin-top: .05rem;
+            color: red;
+            font-size: .12rem;
+            padding: 0 .08rem; }
+            .body-wrap .like-box .goods-box .goods-item a .price span {
+              color: red;
+              font-size: .16rem; }
+  .body-wrap .car-btn {
+    border: 1px solid gray;
+    width: .3rem;
+    height: .3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .3rem .3rem;
+    background-color: transparent;
+    border-radius: .15rem;
+    -webkit-appearance: none;
+    margin: 0 .1rem;
+    float: left; }
+  .body-wrap .shop-btn {
+    border: 1px solid gray;
+    width: .3rem;
+    height: .3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .3rem .3rem;
+    background-color: transparent;
+    border-radius: .15rem;
+    -webkit-appearance: none;
+    margin: 0 .1rem;
+    float: left; }
+  .body-wrap .car-btn-off {
+    background-image: url(http://cart.m.dangdang.com/images/c_checkbox_off.png); }
+  .body-wrap .car-btn-on {
+    background-image: url(http://cart.m.dangdang.com/images/c_checkbox_on.png); }
+  .body-wrap .price-box {
+    width: 100%;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #eeeeee;
+    height: .4rem; }
+    .body-wrap .price-box .all-price {
+      height: .4rem;
+      font-size: .14rem; }
+      .body-wrap .price-box .all-price .all-check {
+        font-style: normal;
+        line-height: .4rem; }
+      .body-wrap .price-box .all-price .sum-price {
+        color: red;
+        margin-left: 1rem; }
+      .body-wrap .price-box .all-price a {
+        float: right;
+        display: block;
+        background: #f14741;
+        height: 100%;
+        width: 30%;
+        color: white;
+        font-size: .16rem;
+        text-align: center;
+        line-height: .4rem; }

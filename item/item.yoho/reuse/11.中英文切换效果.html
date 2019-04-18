@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>中英文切换效果</title>
+<style type="text/css">
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+body{
+	background: gray;
+}
+.box{
+	width: 600px;
+	height: 30px;
+	background: blue;
+	margin:0 auto;
+}
+.box a{
+	text-decoration: none;
+	color: white;
+	float: left;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.en{
+	display: none;
+}
+.box a:hover .cn{
+	display: none;
+}
+.box a:hover .en{
+	display:inline;
+}
+.box a:hover{
+	background: #ac0;
+	color: black;
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		<a href="#">
+			<span class="cn">网站首页</span>
+			<span class="en">home</span>
+		</a>
+		<a href="#">
+			<span class="cn">新闻资讯</span>
+			<span class="en">news</span>
+		</a>
+		<a href="#">
+			<span class="cn">产品中心</span>
+			<span class="en">product</span>
+		</a>
+		<a href="#">
+			<span class="cn">课程介绍</span>
+			<span class="en">lesson</span>
+		</a>
+		<a href="#">
+			<span class="cn">在线留言</span>
+			<span class="en">message</span>
+		</a>
+		<a href="#">
+			<span class="cn">联系我们</span>
+			<span class="en">contact</span>
+		</a>
+	</div>
+</body>
+</html>

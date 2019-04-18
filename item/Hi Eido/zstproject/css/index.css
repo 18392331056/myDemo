@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+/*****************************************************/
+
+
+
+
+#header{
+    width:100%;
+    height:100%;
+}
+/*轮播图*/
+.banner{
+    width: 100%;
+    height:485px;
+    margin: 2px auto 0;
+    overflow: hidden;
+    /*position:relative;*/
+}
+
+/*goods*/
+
+.goods{
+	width:100%;
+	height:870px;
+	background:white;
+}
+.goods_one{
+	width: 1100px;
+    margin-top: 30px;
+    min-height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+	/*background:pink;*/
+
+}
+.goods_ul{
+	width: 100%;
+    height: 100%;
+}
+.goods_ul li{
+	float: left;
+    width: 23%;
+    height: 100%;
+    margin: 20px 1%;
+ 
+}
+.goods_ul img{
+	width: 253px;
+    height: 186px;
+}
+
+.goods_li p:nth-child(2){
+	width: 253px;
+    height: 44px;
+    text-align:center;
+    margin-top:8px;
+    margin-bottom:11px;
+    font-size:16px;
+    
+}
+.goods_li p:nth-child(2) a{
+	color:#000000;
+}
+.last_p{
+	width: 253px;
+    height: 35px;
+    line-height:35px;
+    text-align:center;
+	
+}
+.last_p a{
+	
+	width: 130px;
+    height: 35px;
+    background:#670205;
+    font-size:12px;
+	color:white;
+	display:block;
+	margin:0 auto;
+}
+/*新品上市*/
+
+.goods_two{
+	width: 1100px;
+    margin: 0 auto;
+}
+.middle{
+	height: 37px;
+    border-top: 1px solid #333;
+    padding-bottom: 6px;
+    margin-top: 38px;
+    color: #333;
+    line-height: 37px;
+    text-indent: 13px;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+.goods_three{
+	width: 1100px;
+    height: 390px;/*476*/
+    /*background:pink;*/
+	margin:0 auto;
+	
+}
+.red_yan{
+	float: left;
+    width: 235px;
+    margin: 0 20px;
+    position: relative;
+}
+.goods_three img{
+	width: 235px;
+    height: 235px;
+}
+.red_yan p:nth-child(2){
+	height: 44px;
+    overflow: hidden;
+    color:#000000;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.red_yan p:nth-child(3){
+	width: 235px;
+    height: 30px;
+    color:#000000;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.red_yan p:nth-child(4){
+	width: 235px;
+    height: 20px;
+    color:#670205;
+    font-size: 14px;
+    margin-bottom:8px;
+    text-align: center;
+    
+}
+/*big_tu*/
+.big_tu{
+	width: 100%;
+    
+    height: 719px;
+    background:white;
+}
+.big_tu p{
+	width: 1100px;
+	 margin: 0 auto;
+}
+.big_tu img{
+	display: block;
+	width: 1000px;
+	height: 719px;
+	 margin: 0 auto;
+}

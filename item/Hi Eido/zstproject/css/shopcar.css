@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+.centers{
+	width:100%;
+	/*height:2996px;*/
+	/*margin:0 auto;*/
+    background:white; 
+
+}
+.content{
+	width:980px;
+	height:662px;
+    /*background:pink; */
+	margin:0 auto;
+	overflow:hidden;
+
+}
+.uls{
+	padding-bottom: 10px;
+	display: block;
+    /*background:yellow; */
+    height:50px;
+
+
+}
+.lis{
+	background: #ba2620;
+	margin: 0 5px 0 0;
+    padding: 0;
+    width: 163px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+}
+.spans{
+	width:0px;
+	height:0px;
+	display: block;
+    float: left;
+    margin-top:10px;
+	border:10px solid transparent;
+	border-left-color:#ba2620;
+}
+.biaoge{
+	width: 955px;
+	height:335px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.forms{
+	width: 955px;
+	height:269px;
+}
+.tables{
+	width: 955px;
+	height:269px;
+}

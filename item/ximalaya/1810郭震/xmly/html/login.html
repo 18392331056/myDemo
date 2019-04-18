@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>登录</title>
+<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<!-- header -->
+    <header>
+        <div class="head">
+            <a href="index.html"> > </a>
+            <img src="../image/login.jpg">
+        </div>
+    </header>
+<!-- login -->
+    <div class="login">
+        <div class="login_up">
+            <p id="yzm">验证码登录</p>
+            <p id="mima">密码登录</p>
+        </div>
+        <div class="login_z">
+            <select>
+                <option selected>+ 86</option>
+                
+            </select>
+            <input type="text" id="phone" placeholder="  请输入手机号">
+        </div>
+        <div class="login_down">
+            <input type="button" id="denglu" value="登录">
+            <p id="shouci">首次登录会自动创建新账号</p>   
+        </div>  
+        <div class="login_z2">
+                <select>
+                    <option selected>+ 86</option>
+                    
+                </select>
+                <input type="text" id="phone2" placeholder="  请输入手机号">
+        </div> 
+        <div class="login_down2">
+            <input type="password" id="pwd" placeholder="请输入密码">
+            <input type="button" id="denglu2" value="登录">
+            <div class="youxiang">
+                <p id="shouci2">邮箱登录</p>   
+                <p id="shouci3">忘记密码？</p>
+            </div>    
+        </div> 
+    </div>
+<!-- footer-->
+    <footer>
+        <div class="foot_ups">
+            <div class="foot_up">
+                <div class="xian1"></div>
+                <p>其他登录方式</p>
+                <div class="xian2"></div>
+            </div>
+        </div>
+        <div class="foot_downs">
+            <div class="foot_down">
+                <a href="../html/wode.html">
+                    <img src="../image/l_foot1.jpg">
+                    <p>上次登录</p>
+                </a>
+                <a href="#">
+                    <img src="../image/l_foot2.jpg">
+                    <p></p>
+                </a>
+                <a href="#">
+                    <img src="../image/l_foot3.jpg">
+                    <p></p>
+                </a>
+                <a href="#">
+                    <img src="../image/l_foot4.jpg">
+                    <p></p>
+                </a>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+    $("#mima").click(function(){
+        $("#mima").css({"border-bottom":"2px solid red","color":"red"});
+        $("#yzm").css({"border-bottom":"2px solid white","color":"black"});
+
+        $(".login_z").css({"display":"none"});
+        $(".login_down").css({"display":"none"});
+
+        $(".login_z2").css({"display":"block"});
+        $(".login_down2").css({"display":"block"});
+    });
+
+    $("#yzm").click(function(){
+        $("#yzm").css({"border-bottom":"2px solid red","color":"red"});
+        $("#mima").css({"border-bottom":"2px solid white","color":"black"});
+
+        $(".login_z").css({"display":"block"});
+        $(".login_down").css({"display":"block"});
+
+        $(".login_z2").css({"display":"none"});
+        $(".login_down2").css({"display":"none"});
+    });
+</script>

@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+
+/*center*/
+.center{
+	width:100%;
+	height:1117px;
+
+}
+.lie{
+	width:980px;
+	padding-top: 35px;
+	
+	/*background:pink;*/
+	margin:0 auto;
+	overflow:hidden;
+
+
+}
+.lie_left{
+	
+	width:124px;
+	height:108px;
+    padding-right: 0;
+    margin-top: 50px;
+    float: left;
+}
+   
+
+.zhong h3{
+	display:inline-block;
+	float:left;
+}
+.zhong h3 a{
+	width: 93px;
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight:normal;
+    height: 22px;
+    padding: 7px 0;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.jianjiao{
+
+	width:0;
+	height:0;
+	border:6px solid transparent;
+    display:inline-block;
+    left:20px;
+    top:20px;
+	border-left-color:gray;
+	float:left;
+	margin-top:13px;
+}
+
+
+
+/*.goods*/
+.goods{
+	width:842px;
+	height:580px;
+	float:left;
+	/*background:gray;*/
+
+}
+.goods_img{
+	width:337px;
+	height:337px;
+	float:left;
+
+}
+.goods_img img{
+	width:337px;
+	height:337px;
+	display:block;
+	
+}
+.file{
+	width:505px;
+	height:539px;
+	float:left;
+}
+
+.info{
+	width:505px;
+	height:391px;
+	padding-bottom: 0!important;
+    min-height: 250px;
+	background:white;
+
+}
+
+
+
+
+.info h3{
+	font-size: 20px;
+    line-height: 33px;
+    height: 33px;
+    color: #000;
+    width: 450px;
+    margin-bottom: 5px;
+}
+
+
+.info_message{
+	padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #202331;
+}
+.count{
+     padding: 10px 0 17px 0;
+     width:505px;
+     height:122px;
+	/*background:pink;*/
+
+}
+
+.count_top{
+	 width:505px;
+     height:33px;
+	/*background:yellow;*/
+	margin-bottom: 14px;
+    
+}
+.count_top label{
+	display:inline-block;
+     /*border:1px solid #666;*/
+     float:left;
+     height:33px;
+     line-height:33px;
+
+
+}
+
+.count_top label .hanzi{
+	display:inline-block;
+     
+
+}
+.count_top label p{
+	display:inline-block;
+    
+
+}
+.count_top button{
+	display:inline-block;
+	 width:27px;
+     height:26px;
+     margin-top:0;
+     border:none;
+     outline:none;
+     border-top:1px solid #ada8a8;
+     border-bottom:1px solid #ada8a8;
+    
+}
+
+.count_top button:first-child{
+	
+     border-left:1px solid #ada8a8;
+    
+}
+.count_top button:last-child{
+	
+     border-right:1px solid #ada8a8;
+    
+}
+
+.count_top button span{
+	display:inline-block;
+	font-size:16px;
+	color:#666;
+	 
+}
+#num{
+	display:inline-block;
+	 width:55px;
+     height:25px;
+     border:none;
+     border:1px solid #ada8a8;
+	text-align:center;
+   
+}
+.money{
+	display:inline-block;
+	float:left;
+	margin-left:240px;
+	vertical-align: middle;
+	height:26px;
+}
+
+.shop_car{
+	width: 163px;
+    margin: 0 auto;
+    height: 40px;
+    /*margin-top: 10px;*/
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px; 
+    display:inline-block;
+    margin-right:10px;
+    background: #fff;
+    color: #7c0d02;
+    border: 1px solid #7c0d02!important;
+}
+.xiang_qing{
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    margin:10px auto 0px;
+    display:inline-block;
+    background: #7c0d02;
+  
+
+}
+.xiang_qing a{
+	display: block;
+	 color:white;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+ .no-wish {
+    font-size: 12px;
+    color: #000;
+    display: inline;
+    line-height: 35px;
+    text-align: left;
+    padding-left: 30px;
+    width: auto;
+    margin-left: 12px;
+    height: 35px
+
+}
+.baozheng{
+	background: #eee;
+    width: 100%;
+    padding: 5px 0;
+    display: block;
+    clear: both;
+    /*height: auto!important;*/
+    height: 46px;
+    min-height: 20px;
+    overflow: hidden;
+}
+.baozheng li{
+	float:left;
+	width: 30%;
+    color: #851d13;
+    height: 100%;
+    line-height: 36px;
+    font-size: 14px;
+    float: left;
+    padding-left: 3%;
+    text-align: center
+}
+.baozheng li img{
+	vertical-align: middle;
+    display: inline-block;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style type="text/css">
+	.banner{
+			width: 1410px;
+			height:485px;
+			/*margin: 2px auto 0;*/
+			overflow: hidden;
+			position:relative;
+
+	}
+	/*#box2{
+			position: relative;
+			width: 500px;
+			height: 200px;
+            margin: 2px auto 0;
+			overflow: hidden;
+			}*/
+
+</style>
+
+</head>
+
+<body>
+	<div id="banner"></div>
+	<br/>
+	
+</body>
+</html>
+<script type="text/javascript" src="js/tools.js" ></script>
+<script type="text/javascript" src="js/cssTools.js" ></script>
+<script type="text/javascript" src="js/mover1810.js" ></script>
+<script type="text/javascript" src="js/Slider.js" ></script>
+<script type="text/javascript">
+	window.onload = function(){
+		let s2 = new Slider({
+		boxDom:$("#banner"),
+		width:1410,
+		btnSize:0,
+		height:485,
+		btnPos:"top",
+		btnColor:"transparent",
+		btnHighColor:"transparent",
+		timeSpace:2000,
+		imgs:["img/bo1.jpg","img/bo2.jpg","img/bo3.jpg","img/bo4.jpg","img/bo5.jpg"],
+		hrefs:["http://www.baidu.com","http://www.1000phone.com","http://www.163.com"]
+	});
+
+	}
+
+
+</script>

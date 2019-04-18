@@ -1,0 +1,354 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,select,textarea{
+	margin:0;
+	padding:0;
+}
+html{
+
+    font-size:100px;
+    font-size:26.67vw;
+    height:100%;
+
+}
+body{
+	font-family:"微软雅黑",Arial;
+    font-size:100px;
+    display: flex; 
+    flex-direction: column;
+    height:100%;
+    overflow:hidden;
+    
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+
+
+/* content */
+
+  .content{
+    
+    flex:1;
+   
+    overflow-y: auto;
+  }
+.nav{
+    width:100%;
+    height:.51rem;
+    /* background:pink; */
+    display:flex;
+}
+.selects {
+    width:.45rem;
+    height:.37rem;
+    display:flex;
+    padding-left:.2rem;
+    padding-right:.1rem;
+    background:transparent;
+    border: none;
+}
+.selects select{
+    border: none;
+}
+.selects option{
+   font-size:14px;
+   color:#666;
+   border: none;
+   
+}
+.inp{
+    width:2.8rem;
+    height:.37rem;
+    display:flex;
+   
+    background:#f2f2f2;
+    border-radius:.13rem;
+    align-items: center;
+   
+}
+.inp input{
+    width:2.0rem;
+    height:.15rem;
+    display:block;
+    display:flex;
+    background:transparent;
+    border: none;
+
+}
+.inp .img_one{
+    width:.15rem;
+    height:.15rem;
+    display:block;
+    margin:0 .08rem;
+    display:flex;
+
+}
+.inp .img_two{
+    width:.28rem;
+    height:.26rem;
+    border-radius:50%;
+    display:block;
+    display:flex;
+    margin:0 .08rem;
+
+}
+/* 轮播图 */
+.slider{
+    width:100%;
+}
+/* 轮播的图片设置 */
+.swiper-wrapper img{
+    display: block;
+    width:100%;
+    height:1.3rem;
+}
+/* 豆豆高亮颜色 */
+.swiper-container .swiper-pagination-bullet-active{
+    background:white;
+}
+/* 豆豆的样式设置 */
+.swiper-pagination-bullet{
+    width:5px;
+    height: 5px;
+    background:gray;
+    border-radius: 50%;  
+    
+      /* 圆的50%，方的0 */
+}
+/* 左右箭头的设置 */
+.swiper-button-prev{
+    width:20px;
+    height: 30px;
+    left:10px;
+    background:url(../img/prev.png) no-repeat center;
+    background-size:cover;
+}
+.swiper-button-next{
+    width:20px;
+    height: 30px;
+    right: 10px;
+    background:url(../img/next.png) no-repeat center;
+    background-size:cover;
+}
+
+
+
+
+/* shop */
+
+.shop_ban{
+   
+    overflow-x: auto;
+    display:flex;
+    /* background:pink; */
+    
+    height:2.0rem;
+}
+.home{
+    height:100%;
+   
+    width:100%;
+    flex-shrink: 0;
+    display: flex;
+  flex-direction: column;
+
+}
+.home_one{
+    height:100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+.home_a{
+  width:20%;
+  margin:0 .13rem  
+  
+}
+.home_a img{
+    display:block;
+    width:.48rem;
+    height:.46rem;
+   margin-top:.18rem;
+}
+.home_a span{
+    margin-top:.05rem;
+    display:block;
+    font-size:14px;
+    color:#333;
+}
+/* news */
+
+.news{
+   
+    height:.39rem;
+    padding:.17rem .12rem 0rem .15rem; 
+    display: flex;
+    box-shadow: 0rem .008rem .03rem .03rem #e7e4e4;
+    /* box-shadow: 0rem -.08rem .0rem .0rem white; */
+
+}
+.news p:first-child{
+   /* line-height: .15rem; */
+    display: flex;
+}
+.news p:first-child span{
+    font-size :12px;
+    color:red;
+    display: flex;
+}
+.news p:first-child img{
+    font-size :12px;
+    display:inline-block;
+    color:red;
+    width:12px;
+    height:12px;
+    margin-top:.03rem;
+}
+.news p:last-child{
+    font-size :12px;
+    color:black;
+}
+
+
+/* .intruduce */
+
+
+.intruduce{
+    /* width:100%; */
+    /* height:2.72rem; */
+    padding:0rem .17rem;
+    overflow: hidden;
+
+}
+.intruduce .tui{
+    margin-bottom:.11rem;
+}
+.intruduce h3{
+    font-size:.18rem;
+    color:black;
+    height:.51rem;
+    line-height:.51rem;
+    font-weight:700;
+}
+.tui{
+    display:flex;
+}
+.tui img{
+    display:inline-block;
+    height:.98rem;
+    width:1.61rem;
+}
+.tui img:nth-child(2n-1){
+   margin-right:.14rem;
+}
+.intruduce .jian{
+    display:flex;
+    width:100%;
+}
+.intruduce .jian a{
+    width:33.33%;
+    display:flex;
+
+   
+}
+.intruduce .jian img{
+    height:.71rem;
+    width:1.07rem;
+}
+.price{
+    display:flex;
+    height:.51rem;
+    line-height:.51rem;
+    justify-content: space-between;
+ }
+ .price h3{
+    font-size:.18rem;
+    color:black;
+    font-weight:700;
+ 
+ }
+ .price h6{
+   color:#9e9e9e;
+   font-size:.12rem;
+
+   font-weight:700;
+}
+.jia_ge{
+   display:flex;
+
+}
+.quanshi{
+    width:50%;
+    font-size:.14rem;
+    color:black; 
+}
+.quanshi p{
+    /* display:flex; */
+
+}
+.quanshi p {
+    font-size:.22rem;
+    color:black;
+   display:inline-block;
+    font-weight:700;
+}
+.quanshi p span{
+    font-size:.14rem;
+    color:black; 
+    display:inline-block;
+    font-weight:700;
+}
+.quanshi h6{
+    color:#9e9e9e;
+    font-size:.12rem;
+ 
+    font-weight:700;
+}  
+.re{
+    padding-right:0;
+
+}
+
+.active{
+   display:flex;
+    overflow-x: auto;
+}
+.active img{
+    display:block;
+    height:1.21rem;
+    width:3.25rem;
+    margin-right:.17rem;
+}
+/* foot */
+ .foot{
+     width:100%;
+     height:.48rem;
+     /* background:pink; */
+     border-top:.02rem  solid #dcdcdc;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .foot a{
+     /* flex:1; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+ .foot a .iconfont{
+    font-size:.2rem;
+    color:#818181;
+ }
+ .foot a .shou_ye{
+    font-size:10px;
+    color:#818181;
+ }
+
+
+

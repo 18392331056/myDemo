@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+$baseFontSize:20px;
+
+$borderDirection:top;
+
+@mixin redBox{
+	background-color:red;
+	border:1px solid green;
+}
+
+body{
+	background-color:red;
+	font-size:min($baseFontSize,15px);
+}
+
+#box1{
+	font-size:$baseFontSize+2;
+	border-#{$borderDirection}:1px solid pink;
+}
+
+#box2{
+	font-size:$baseFontSize;
+	border-#{$borderDirection}:1px solid pink;
+}
+
+#top_nav{
+	font-size:$baseFontSize+2;
+	a{
+		color:red;
+	}
+	li{
+		list-style:none;
+		width:100px;
+	}
+}
+
+#box3{
+	@include redBox;
+	width:200px;
+	height:120px;
+}
+
+
+#box4{
+	@include redBox;
+	width:300px;
+	height:150px;
+}
+
+#box5{
+	@extend #box4;
+	position:absolute;
+}
+
+.alert{
+	font-size:12px;
+}
+
+.alert a{
+	color:red;
+	&:hover{
+		color:green;
+	}
+}
+
+.alert_info{
+	@extend .alert;
+	width:10px;
+}
+
+$count:90;
+
+@for $i from 1 through $count{
+	#ulBox li:nth-child(#{$i}){
+		left:($i - 1) %3 *150 px;
+	}
+}

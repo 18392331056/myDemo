@@ -1,0 +1,34 @@
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+gulp.task("sass",async()=>{
+    gulp.src("index.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("G:\\qianfeng\\dangdangAPP\\css"));
+});
+gulp.task("watch",function(){
+    gulp.watch("index.scss",gulp.series("sass"));
+    gulp.watch("sasscss/classify.scss",gulp.series("sass2"));
+    gulp.watch("sasscss/buy.scss",gulp.series("sass3"));
+    gulp.watch("sasscss/my.scss",gulp.series("sass4"));
+    gulp.watch("sasscss/goodsdetail.scss",gulp.series("sass5"));
+});
+gulp.task("sass2",async()=>{
+    gulp.src("sasscss/classify.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("G:\\qianfeng\\dangdangAPP\\css"));
+});
+gulp.task("sass3",async()=>{
+    gulp.src("sasscss/buy.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("G:\\qianfeng\\dangdangAPP\\css"));
+});
+gulp.task("sass4",async()=>{
+    gulp.src("sasscss/my.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("G:\\qianfeng\\dangdangAPP\\css"));
+});
+gulp.task("sass5",async()=>{
+    gulp.src("sasscss/goodsdetail.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("G:\\qianfeng\\dangdangAPP\\css"));
+});

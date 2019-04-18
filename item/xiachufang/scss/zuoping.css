@@ -1,0 +1,308 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 26.67vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+.hez {
+  width: 100%;
+  height: .97rem;
+}
+
+.hez2 {
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+.hez2 -webkit-scrollbar {
+  display: none;
+}
+
+.hez3 {
+  width: 100%;
+  height: .54rem;
+}
+
+.yi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  height: 0.6rem;
+}
+
+.yi a:nth-child(1) {
+  display: block;
+}
+
+.yi a:nth-child(1) img {
+  width: .2rem;
+  height: .2rem;
+}
+
+.yi a:nth-child(2) {
+  display: block;
+}
+
+.yi a:nth-child(2) img {
+  width: 2.6rem;
+  height: 0.39rem;
+}
+
+.yi a:nth-child(3) {
+  display: block;
+}
+
+.yi a:nth-child(3) img {
+  width: .22rem;
+  height: .21rem;
+}
+
+.er {
+  height: .37rem;
+  width: 100%;
+}
+
+.er ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 1.76rem;
+  height: .37rem;
+  font-size: 14px;
+  color: #9c9c9c;
+  font-weight: 700;
+}
+
+.er ul li {
+  position: relative;
+}
+
+.er ul li span {
+  position: absolute;
+  width: .2rem;
+  height: .04rem;
+  background-color: #f96554;
+  border-radius: .02rem;
+  left: .04rem;
+  top: .24rem;
+  display: none;
+}
+
+.er ul li:nth-child(3) {
+  color: #000;
+}
+
+.er ul li:nth-child(3) span {
+  display: block;
+}
+
+.san {
+  width: 100%;
+  width: 3.37rem;
+  margin: 0 auto;
+}
+
+.san .san_dv {
+  height: .61rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.san .san_dv h3 {
+  font-size: 15px;
+}
+
+.san .san_dv a {
+  font-size: 14px;
+  color: #979797;
+}
+
+.san .san_dv2 {
+  height: 1.73rem;
+  width: 100%;
+  margin-bottom: .34rem;
+}
+
+.san .san_dv2 ul {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+.san .san_dv2 ul li {
+  width: 1.63rem;
+  margin-right: .11rem;
+  height: 1.73rem;
+}
+
+.san .san_dv2 ul li img {
+  width: 1.63rem;
+  height: 1.12rem;
+}
+
+.san .san_dv2 ul li p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: .24rem;
+}
+
+.si {
+  width: 100%;
+}
+
+.si .si_dv {
+  width: 3.37rem;
+  height: .6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.si .si_dv .si_dv2 {
+  width: 1.4rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.si .si_dv .si_dv2 b:nth-child(2) {
+  color: #000;
+}
+
+.si .si_dv p {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.si ul {
+  width: 3.37rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.si ul li {
+  width: 1.59rem;
+  height: 100%;
+  margin-bottom: .3rem;
+}
+
+.si ul li img {
+  width: 1.59rem;
+  height: 1.59rem;
+}
+
+.si ul li p {
+  width: 1.49rem;
+  height: .38rem;
+  font-size: 12px;
+  line-height: .17rem;
+  color: #30302e;
+  margin: .08rem 0 .04rem 0;
+}
+
+.si ul li div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: .26rem;
+}
+
+.si ul li div div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.si ul li div div:nth-child(1) img {
+  width: .18rem;
+  height: .18rem;
+}
+
+.si ul li div div:nth-child(1) span {
+  font-size: 9px;
+}
+
+.si ul li .li_dv {
+  height: .31rem;
+}
+
+.si ul li .li_dv div {
+  width: .89rem;
+  height: .31rem;
+  background-color: #f2f2f2;
+  border-radius: .22rem;
+  margin: 0 auto;
+}
+
+.si ul li .li_dv div img {
+  margin-left: .29rem;
+  margin-right: .09rem;
+}
+
+.wei {
+  width: 100%;
+  height: .54rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+
+.wei a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: .31rem;
+  height: .37rem;
+}
+
+.wei a img {
+  width: .23rem;
+  height: .2rem;
+}
+
+.wei a .wei_p {
+  color: #f56952;
+}
+
+.wei a p {
+  font-size: 10px;
+  color: #363634;
+}

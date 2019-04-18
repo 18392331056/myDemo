@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+	background: :red;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+
+
+/*logo*/
+.logo_nav{
+	width:100%;
+	height:1042px;
+}
+.logo_zhu{
+	height:1042px;
+	width: 1100px;
+   
+    margin: 0 auto;
+	/*background:pink;*/
+}
+.logo_img{
+	width: 100%;
+    padding-top: 25px;
+    overflow: hidden;
+    padding-bottom: 38px;
+    /*background:yellow;*/
+}
+.logo_img ul{
+	height: 196px;
+    overflow: hidden;
+    float:left;
+}
+.logo_img ul li{
+	width: 188px;
+    margin-right: 10px;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.logo_img li p:nth-child(1){
+	width: 100%;
+    background: #e0e1e3;
+}
+.logo_img li p:nth-child(1) img{
+	width: 188px;
+    background:195px;
+    display: block;
+}
+.logo_img li p:nth-child(2){
+	width: 158px;
+    height: 37px;
+    background: #aeb0b3;
+    right: 0;
+    top: 12px;
+    z-index: 1;
+    line-height: 37px;
+    font-size: 14px;
+    overflow: hidden;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+.logo_img li p:nth-child(3){
+	width: 52px;
+    height: 52px;
+    background:#a81519;
+    left: 6px;
+    top: 5px;
+    z-index: 2;
+    line-height: 52px;
+    font-size: 39px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    text-align:center;
+
+}
+
+
+/*.inputs*/
+.inputs{
+    width: 980px;
+   height: 550px;
+    /*background:#a81519;*/
+   
+}
+.logo_input{
+   
+    border: solid 1px #ccc;
+    width: 423px;
+    height:313px;
+    float:left;
+    text-align:center;
+    margin-right:30px;
+
+}
+.pone{
+    display: block;
+    width: 165px;
+    height: 24px;
+    padding-left: 3px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    color: #666;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 0 0 3px;
+    margin-top: 10px;
+
+}
+.logo_input h3{
+    width: 100%;
+    padding-top: 38px;
+    line-height: 18px;
+     text-align: center; 
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: normal;
+}
+.p1{
+    width: 100%;
+    line-height: 44px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: -10px
+}
+.p2 a{
+    display: block;
+    width: 168px;
+    margin-left:67px;
+    
+    color: #000;
+    line-height: 24px;
+    margin-top: 10px;
+    font-size:12px;
+}
+.item{
+    text-align:center;
+    height:26px;
+    margin:25px 0 10px -16px;   
+    font-size:12px;
+}
+.logo_btn{
+    display: block;
+    width: 86px;
+    height: 29px;
+    background: #9e1503;
+    border: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #fff;
+    line-height: 29px;
+    margin-bottom: 33px;
+    font-size:12px;
+
+}
+
+.zhuce_input{
+    /*background:pink;*/
+    height:523px;
+    margin: 0;
+    float: right;
+    width: 523px;
+    padding: 0 0 25px 0;
+    border: solid 1px #ccc;
+    float:left;
+
+}
+.zhuce_input h3{
+    width: 100%;
+    padding-top: 38px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: normal;
+    margin: 0;
+}
+.zhuce_input .p2{
+    width: 100%;
+    line-height: 44px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+}
+form{
+   
+
+}
+.form_table{
+     margin:0 auto;
+     text-align:center;
+
+}
+.form_table tr td{
+    width: 100%;
+    /*text-align: center;*/
+    /*position: relative;*/
+    padding-bottom: 12px;
+    line-height: 31px;
+    font-size: 13px;
+    vertical-align: top;
+
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*text-align: center;*/
+    margin:0 auto;
+
+}
+.sub_input{
+    display: block;
+    width: 165px;
+    height: 24px;
+    padding-left: 3px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    color: #666;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 0 0 3px;
+    margin-bottom: 10px;
+    
+}
+.pass{
+    position: relative;
+    width: 500px;
+
+}
+.subin_span,.span_class{
+    font-size:12px;
+    
+    color: #9e1503;
+    display:block;
+    font-style:oblique;
+}
+
+.sub_in .show_pass{
+    display:inline-block;
+    position: relative;
+    top: -39px;
+    right: -220px;
+    padding: 0 0 0 30px;
+    float: left;
+    height: 26px;
+    /*background: */
+}
+.show_pass input{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    margin:0 10px;
+}
+
+.logo_agree p{
+    width:100%;
+    height:29px;
+    text-align:center;
+    margin:0 auto;
+}
+.first{
+    display:inline-block;
+ 
+    margin:0 2px;
+}

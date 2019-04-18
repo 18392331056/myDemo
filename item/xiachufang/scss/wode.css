@@ -1,0 +1,129 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 26.67vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+.yi_dv {
+  width: 100%;
+}
+
+.yi_dv {
+  width: 3.37rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.yi_dv .yi_dv2 {
+  height: .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yi_dv .yi_dv2 img {
+  width: .27rem;
+  height: .29rem;
+}
+
+.yi_dv .yi_b {
+  display: block;
+  height: .96rem;
+  line-height: .96rem;
+  text-align: center;
+  font-size: 23px;
+  margin-top: .76rem;
+}
+
+.yi_dv p {
+  width: 3.17rem;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: .22rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.yi_dv div {
+  height: .38rem;
+  line-height: .38rem;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.yi_dv .yi_dv3 {
+  background-color: #70bd53;
+  margin-top: .32rem;
+  margin-bottom: .19rem;
+}
+
+.yi_dv .yi_dv4 {
+  background-color: #f8664f;
+}
+
+.yi_dv .yi_dv5 {
+  color: #f8664f;
+  margin-top: .42rem;
+}
+
+.wei {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: .54rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+
+.wei a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: .31rem;
+  height: .37rem;
+}
+
+.wei a img {
+  width: .23rem;
+  height: .2rem;
+}
+
+.wei a .wei_p {
+  color: #f56952;
+}
+
+.wei a p {
+  font-size: 10px;
+  color: #363634;
+}

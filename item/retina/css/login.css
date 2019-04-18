@@ -1,0 +1,91 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+    background-color: #3b3e40;
+    display: flex;
+    justify-content: center;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+.box{
+    width:300px;
+    height:240px;
+    margin-top:200px;
+}
+.box li{
+    margin-bottom: 20px;
+    width:100%;
+}
+.box li:nth-child(1){
+    width:100%;
+    height: 35px;
+}
+.box li:nth-child(1) span:nth-child(1){
+    color:white;
+    font-size:34px;
+    font-weight: 600;
+}
+.box li:nth-child(1) span:nth-child(2){
+    color:white;
+    font-size:34px;
+    display: inline-block;
+    margin-left: 7px;
+}
+.box li:nth-child(2) input{
+    width:100%;
+    height:34px;
+    background-color: #faffbd;
+    border-radius:2px;
+    border:none;
+    text-indent: 10px;
+}
+.box li:nth-child(3) input{
+    width:100%;
+    height:34px;
+    background-color: #faffbd;
+    border-radius:2px;
+    border:none;
+    text-indent: 10px;
+}
+.box li:nth-child(4) input{
+    width:100%;
+    height:34px;
+    background-color: #1382c9;
+    border-radius:3px;
+    border:none;
+    text-indent: 10px;
+    font-weight: 600;
+    text-align: center;
+    color:white;
+}
+.box li:nth-child(5){
+    widows: 100%;
+    height:12px;
+    text-align: center;
+    margin-top:-10px;
+}
+.box li:nth-child(5) a{
+    color: #cccccc;
+    font-size: 12px;
+}
+
+@media screen and (max-width:767px){
+    .box{
+        width:80%;
+        margin:50px auto 0px;
+    }
+    .box li:nth-child(1){
+        display: flex;
+        justify-content: center;
+    }
+}
